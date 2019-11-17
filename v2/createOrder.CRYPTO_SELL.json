@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://raw.githubusercontent.com/cexiolabs/cryptopay.schemas/master/v2/createOrder.CRYPTO_SELL.json",
+	"title": "Create order by instrument CRYPTO_SELL",
+	"allOf": [
+		{
+			"$ref": "https://raw.githubusercontent.com/cexiolabs/cryptopay.schemas/master/v2/createOrder.definitions.json#/definitions/createOrderBuySell"
+		},
+		{
+			"type": "object",
+			"properties": {
+				"instrument": {
+					"const": "CRYPTO_SELL"
+				},
+				"returnAddress": {
+					"title": "Optional. Return crypto address (rejected case)",
+					"type": "string",
+					"maxLength": 256
+				}
+			}
+		}
+	]
+}
