@@ -1,0 +1,12 @@
+{
+	"$schema": "https://cexiolabs.github.io/cryptopay.schemas/v2/createOrder.CRYPTO_SELL.json",
+	"clientOrderId": "1490548887804-XA-1112-TU",
+	"clientOrderTag": "Sell some BTC for 150.42$",
+	"instrument": "CRYPTO_SELL",
+	"fiatCurrency": "USD",
+	"cryptoCurrency": "BTC",
+	"feeModel": "CUSTOM",
+	"amount": "150.42",
+	"amountCurrency": "USD",
+	"autoStart": false
+}
