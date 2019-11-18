@@ -32,11 +32,6 @@
 					"pattern": "^[A-Z_0123456789]+$",
 					"maxLength": 64,
 					"description": "Optional. Fee model applied to the order (override merchant default fee model for the instument)"
-				},
-				"autoStart": {
-					"title": "If true, invoice will start immediately, otherwise will suspend in status NEW and will waiting for start processing request.",
-					"type": "boolean",
-					"default": false
 				}
 			},
 			"required": [

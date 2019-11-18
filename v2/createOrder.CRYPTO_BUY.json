@@ -16,10 +16,15 @@
 					"title": "Mandatory. Destination crypto address",
 					"type": "string",
 					"maxLength": 256
+				},
+				"autoStart": {
+					"title": "Mandatory. If true, invoice will start immediately, otherwise will suspend in status NEW and will waiting for start processing request.",
+					"type": "boolean"
 				}
 			},
 			"required": [
-				"address"
+				"address",
+				"autoStart"
 			]
 		}
 	]

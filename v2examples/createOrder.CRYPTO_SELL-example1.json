@@ -7,6 +7,5 @@
 	"cryptoCurrency": "BTC",
 	"feeModel": "CUSTOM",
 	"amount": "150.42",
-	"amountCurrency": "USD",
-	"autoStart": false
+	"amountCurrency": "USD"
 }
