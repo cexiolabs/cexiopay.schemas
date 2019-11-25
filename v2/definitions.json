@@ -1,0 +1,24 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://cexiolabs.github.io/cryptopay.schemas/v2/definitions.json",
+	"definitions": {
+		"instrumentKind": {
+			"enum": [
+				"CRYPTO_BUY",
+				"CRYPTO_SELL"
+			]
+		},
+		"financial": {
+			"type": "string",
+			"pattern": "^([+-]?)(0|[1-9][0-9]*)(\\.([0-9]+))?$"
+		},
+		"financialPositive": {
+			"type": "string",
+			"pattern": "^(0|[1-9][0-9]*)(\\.([0-9]+))?$"
+		},
+		"financialNegative": {
+			"type": "string",
+			"pattern": "^-(0|[1-9][0-9]*)(\\.([0-9]+))?$"
+		}
+	}
+}

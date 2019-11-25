@@ -1,0 +1,76 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://cexiolabs.github.io/cryptopay.schemas/v2/notifications.json",
+	"definitions": {
+		"cryptoDeposit": {
+			"type": "object",
+			"properties": {
+				"jsonrpc": {
+					"const": "2.0"
+				},
+				"method": {
+					"const": "cryptoDeposit"
+				},
+				"params": {
+					"type": "object",
+					"properties": {
+						"orderId": {
+							"type": "string"
+						},
+						"transaction": {
+							"type": "object",
+							"properties": {
+								"network": {
+									"type": "string",
+									"enum": [
+										"mainnet",
+										"testnet"
+									]
+								},
+								"currency": {
+									"type": "string"
+								},
+								"amount": {
+									"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/createOrder.definitions.json#/definitions/financialPositive"
+								},
+								"url": {
+									"type": "string"
+								},
+								"status": {
+									"type": "string",
+									"enum": [
+										"NEW",
+										"PENDING",
+										"ACCEPTED",
+										"REJECTED"
+									]
+								}
+							},
+							"required": [
+								"network",
+								"currency",
+								"amount",
+								"url"
+							]
+						}
+					},
+					"required": [
+						"orderId",
+						"transaction"
+					]
+				}
+			},
+			"required": [
+				"jsonrpc",
+				"method",
+				"params"
+			]
+		}
+	},
+	"title": "CryptoPay Notifications",
+	"oneOf": [
+		{
+			"$ref": "#/definitions/cryptoDeposit"
+		}
+	]
+}
