@@ -56,12 +56,12 @@
 					"type": "object",
 					"properties": {
 						"fiatCurrency": {
-							"title": "Fiat currency (gained)",
-							"type": "string"
+							"title": "Fiat currency",
+							"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/definitions.json#/definitions/currency"
 						},
 						"cryptoCurrency": {
-							"title": "Crypto currency (spend)",
-							"type": "string"
+							"title": "Crypto currency",
+							"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/definitions.json#/definitions/currency"
 						},
 						"amount": {
 							"title": "Invoice amount (string in decimal form, like \"1.23\")",
@@ -69,7 +69,7 @@
 						},
 						"amountCurrency": {
 							"title": "Currency in which amount provided (like: BTC, USD)",
-							"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/definitions.json#/definitions/financialPositive"
+							"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/definitions.json#/definitions/currency"
 						}
 					},
 					"required": [
