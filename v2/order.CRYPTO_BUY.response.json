@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://cexiolabs.github.io/cryptopay.schemas/v2/order.CRYPTO_BUY.response.json",
-	"title": "Request for create CRYPTO_BUY order",
+	"title": "Response for create CRYPTO_BUY order",
 	"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/order.json#/definitions/orderCryptoBuy"
 }

@@ -1,0 +1,13 @@
+{
+	"$schema": "https://cexiolabs.github.io/cryptopay.schemas/v2/order.CRYPTO_BUY.request.json",
+	"clientOrderId": "1490548887804-XA-1112-TU",
+	"clientOrderTag": "Buy some BTC for 150.42$",
+	"instrument": "CRYPTO_BUY",
+	"fiatCurrency": "USD",
+	"cryptoCurrency": "BTC",
+	"feeModel": "CUSTOM",
+	"amount": "150.42",
+	"amountCurrency": "USD",
+	"address": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+	"autoStart": false
+}

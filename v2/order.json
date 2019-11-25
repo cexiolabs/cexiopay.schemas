@@ -28,10 +28,10 @@
 				"clientOrderTag": {
 					"type": "string",
 					"maxLength": 4096,
-					"description": "Optional. Any user's info to be stored along the invoice"
+					"description": "Optional. Any user's info to be stored along the order."
 				},
 				"instrument": {
-					"$ref": "#/definitions/instrumentKind",
+					"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/definitions.json#/definitions/instrumentKind",
 					"description": "Mandatory. Name of instument for the order."
 				},
 				"feeModel": {

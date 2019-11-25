@@ -1,5 +1,5 @@
 {
-	"$schema": "https://cexiolabs.github.io/cryptopay.schemas/v2/createOrder.CRYPTO_BUY.json",
+	"$schema": "https://cexiolabs.github.io/cryptopay.schemas/v2/order.CRYPTO_BUY.response.json",
 	"clientOrderId": "1490548887804-XA-1112-TU",
 	"clientOrderTag": "Buy 0.05142111 BTC for some $",
 	"instrument": "CRYPTO_BUY",
@@ -9,5 +9,18 @@
 	"amount": "0.05142111",
 	"amountCurrency": "BTC",
 	"address": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-	"autoStart": false
+	"autoStart": false,
+	"status": {
+		"current": {
+			"TBD": "//"
+		},
+		"history": [
+			{
+				"TBD": "//"
+			}
+		]
+	},
+	"cashFlow": {
+		"TBD": "//"
+	}
 }

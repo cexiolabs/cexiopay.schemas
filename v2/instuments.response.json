@@ -1,0 +1,6 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://cexiolabs.github.io/cryptopay.schemas/v2/instuments.response.json",
+	"title": "Response for get instruments",
+	"type": "object"
+}
