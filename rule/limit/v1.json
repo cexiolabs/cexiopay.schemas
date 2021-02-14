@@ -1,0 +1,189 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://cexiolabs.github.io/cryptopay.schemas/rule/limit/v1.json",
+	"definitions": {
+		"fixedOrFactor": {
+			"type": "object",
+			"oneOf": [
+				{
+					"title": "Fixed value",
+					"properties": {
+						"type": {
+							"const": "FIXED"
+						},
+						"value": {
+							"$ref": "#/definitions/financialPositive"
+						}
+					},
+					"required": [
+						"type",
+						"value"
+					]
+				},
+				{
+					"title": "Percent value",
+					"properties": {
+						"type": {
+							"const": "FACTOR"
+						},
+						"value": {
+							"$ref": "#/definitions/percentPositive"
+						}
+					},
+					"required": [
+						"type",
+						"value"
+					]
+				}
+			]
+		},
+		"financialPositive": {
+			"type": "string",
+			"title": "Positive financial value",
+			"pattern": "^(0|[1-9][0-9]*)(\\.([0-9]+))?$"
+		},
+		"percentPositive": {
+			"type": "string",
+			"title": "Positive percent value (0.01 - mean 1%)",
+			"pattern": "^(0|[1-9][0-9]*)(\\.([0-9]+))?$"
+		},
+		"secondsTimespan": {
+			"type": "number",
+			"exclusiveMinimum": 0
+		}
+	},
+	"oneOf": [
+		{
+			"properties": {
+				"kind": {
+					"const": "ORDER_CURRENCY_FROM_MIN",
+					"description": "Order minimal amount in \"from\" section."
+				},
+				"value": {
+					"$ref": "#/definitions/financialPositive"
+				}
+			},
+			"required": [
+				"kind",
+				"value"
+			]
+		},
+		{
+			"properties": {
+				"kind": {
+					"const": "ORDER_CURRENCY_FROM_MAX",
+					"description": "Order maximum amount in \"from\" section."
+				},
+				"value": {
+					"$ref": "#/definitions/financialPositive"
+				}
+			},
+			"required": [
+				"kind",
+				"value"
+			]
+		},
+		{
+			"properties": {
+				"kind": {
+					"const": "ORDER_CURRENCY_TO_MIN",
+					"description": "Order minimal amount in \"to\" section."
+				},
+				"value": {
+					"$ref": "#/definitions/financialPositive"
+				}
+			},
+			"required": [
+				"kind",
+				"value"
+			]
+		},
+		{
+			"properties": {
+				"kind": {
+					"const": "ORDER_CURRENCY_TO_MAX",
+					"description": "Order maximum amount in \"to\" section."
+				},
+				"value": {
+					"$ref": "#/definitions/financialPositive"
+				}
+			},
+			"required": [
+				"kind",
+				"value"
+			]
+		},
+		{
+			"properties": {
+				"kind": {
+					"const": "ORDER_DEVIATION_ALLOWED_UNDERPAYMENT",
+					"description": "Maximum allowed underpayment to process order normally as is."
+				},
+				"deviation": {
+					"$ref": "#/definitions/fixedOrFactor"
+				}
+			},
+			"required": [
+				"kind",
+				"deviation"
+			]
+		},
+		{
+			"properties": {
+				"kind": {
+					"const": "ORDER_DEVIATION_ALLOWED_OVERPAYMENT",
+					"description": "Maximum allowed overpayment to process order normally as is."
+				},
+				"deviation": {
+					"$ref": "#/definitions/fixedOrFactor"
+				}
+			},
+			"required": []
+		},
+		{
+			"properties": {
+				"kind": {
+					"const": "ORDER_DEVIATION_REJECT_OVERPAYMENT",
+					"description": "Maximum allowed overpayment to process an order with change. If payment over this limit then the order will be rejected."
+				},
+				"deviation": {
+					"$ref": "#/definitions/fixedOrFactor"
+				}
+			},
+			"required": [
+				"kind",
+				"deviation"
+			]
+		},
+		{
+			"properties": {
+				"kind": {
+					"const": "ORDER_EXPIRATION_PAID",
+					"description": "Expiration limit for paid orders. This limit applied for paid order only."
+				},
+				"timespan": {
+					"$ref": "#/definitions/secondsTimespan"
+				}
+			},
+			"required": [
+				"kind",
+				"timespan"
+			]
+		},
+		{
+			"properties": {
+				"kind": {
+					"const": "ORDER_EXPIRATION_UNPAID",
+					"description": "Expiration limit for unpaid orders. This limit applied for UNpaid order only."
+				},
+				"timespan": {
+					"$ref": "#/definitions/secondsTimespan"
+				}
+			},
+			"required": [
+				"kind",
+				"timespan"
+			]
+		}
+	]
+}

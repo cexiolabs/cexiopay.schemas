@@ -1,0 +1,113 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://cexiolabs.github.io/cryptopay.schemas/rule/commission/v1.json",
+	"definitions": {
+		"fixedOrFactor": {
+			"type": "object",
+			"oneOf": [
+				{
+					"title": "Fixed value",
+					"properties": {
+						"type": {
+							"const": "FIXED"
+						},
+						"value": {
+							"$ref": "#/definitions/financialPositive"
+						}
+					},
+					"required": [
+						"type",
+						"value"
+					]
+				},
+				{
+					"title": "Percent value",
+					"properties": {
+						"type": {
+							"const": "FACTOR"
+						},
+						"value": {
+							"$ref": "#/definitions/percentPositive"
+						}
+					},
+					"required": [
+						"type",
+						"value"
+					]
+				}
+			]
+		},
+		"financialPositive": {
+			"type": "string",
+			"title": "Positive financial value",
+			"pattern": "^(0|[1-9][0-9]*)(\\.([0-9]+))?$"
+		},
+		"percentPositive": {
+			"type": "string",
+			"title": "Positive percent value (0.01 - mean 1%)",
+			"pattern": "^(0|[1-9][0-9]*)(\\.([0-9]+))?$"
+		}
+	},
+	"oneOf": [
+		{
+			"properties": {
+				"kind": {
+					"const": "ORDER_PROCESSING_CURRENCY_FROM",
+					"description": "Order processing commission applied to \"from\" section."
+				},
+				"value": {
+					"$ref": "#/definitions/fixedOrFactor"
+				}
+			},
+			"required": [
+				"kind",
+				"value"
+			]
+		},
+		{
+			"properties": {
+				"kind": {
+					"const": "ORDER_PROCESSING_CURRENCY_TO",
+					"description": "Order processing commission applied to \"to\" section."
+				},
+				"value": {
+					"$ref": "#/definitions/fixedOrFactor"
+				}
+			},
+			"required": [
+				"kind",
+				"value"
+			]
+		},
+		{
+			"properties": {
+				"kind": {
+					"const": "ORDER_EXCHANGE_CURRENCY_FROM",
+					"description": "Exchange commission applied to \"from\" section."
+				},
+				"value": {
+					"$ref": "#/definitions/fixedOrFactor"
+				}
+			},
+			"required": [
+				"kind",
+				"value"
+			]
+		},
+		{
+			"properties": {
+				"kind": {
+					"const": "ORDER_EXCHANGE_CURRENCY_TO",
+					"description": "Exchange commission applied to \"to\" section."
+				},
+				"value": {
+					"$ref": "#/definitions/fixedOrFactor"
+				}
+			},
+			"required": [
+				"kind",
+				"value"
+			]
+		}
+	]
+}

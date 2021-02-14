@@ -1,0 +1,5 @@
+{
+	"$schema": "https://cexiolabs.github.io/cryptopay.schemas/rule/limit/v1.json",
+	"kind": "ORDER_CURRENCY_TO_MIN",
+	"value": "4.99"
+}
