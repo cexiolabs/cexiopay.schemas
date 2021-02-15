@@ -1,8 +1,8 @@
 {
 	"$schema": "https://cexiolabs.github.io/cryptopay.schemas/rule/commission/v1.json",
-	"kind": "ORDER_EXCHANGE_CURRENCY_FROM",
+	"kind": "COMMISSION_ORDER_PROCESSING_CURRENCY_FROM",
 	"value": {
 		"type": "FACTOR",
-		"value": "0.025"
+		"value": "0.08"
 	}
 }

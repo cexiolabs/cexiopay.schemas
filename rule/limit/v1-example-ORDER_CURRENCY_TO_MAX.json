@@ -1,5 +1,5 @@
 {
 	"$schema": "https://cexiolabs.github.io/cryptopay.schemas/rule/limit/v1.json",
-	"kind": "ORDER_CURRENCY_TO_MAX",
+	"kind": "LIMIT_ORDER_CURRENCY_TO_MAX",
 	"value": "10000.99"
 }

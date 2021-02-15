@@ -1,6 +1,6 @@
 {
 	"$schema": "https://cexiolabs.github.io/cryptopay.schemas/rule/limit/v1.json",
-	"kind": "ORDER_DEVIATION_ALLOWED_UNDERPAYMENT",
+	"kind": "LIMIT_ORDER_DEVIATION_ALLOWED_UNDERPAYMENT",
 	"deviation": {
 		"type": "FACTOR",
 		"value": "0.005"

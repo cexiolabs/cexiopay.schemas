@@ -52,7 +52,7 @@
 		{
 			"properties": {
 				"kind": {
-					"const": "ORDER_PROCESSING_CURRENCY_FROM",
+					"const": "COMMISSION_ORDER_PROCESSING_CURRENCY_FROM",
 					"description": "Order processing commission applied to \"from\" section."
 				},
 				"value": {
@@ -67,7 +67,7 @@
 		{
 			"properties": {
 				"kind": {
-					"const": "ORDER_PROCESSING_CURRENCY_TO",
+					"const": "COMMISSION_ORDER_PROCESSING_CURRENCY_TO",
 					"description": "Order processing commission applied to \"to\" section."
 				},
 				"value": {
@@ -82,7 +82,7 @@
 		{
 			"properties": {
 				"kind": {
-					"const": "ORDER_EXCHANGE_CURRENCY_FROM",
+					"const": "COMMISSION_ORDER_EXCHANGE_CURRENCY_FROM",
 					"description": "Exchange commission applied to \"from\" section."
 				},
 				"value": {
@@ -97,7 +97,7 @@
 		{
 			"properties": {
 				"kind": {
-					"const": "ORDER_EXCHANGE_CURRENCY_TO",
+					"const": "COMMISSION_ORDER_EXCHANGE_CURRENCY_TO",
 					"description": "Exchange commission applied to \"to\" section."
 				},
 				"value": {

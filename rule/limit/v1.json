@@ -56,7 +56,7 @@
 		{
 			"properties": {
 				"kind": {
-					"const": "ORDER_CURRENCY_FROM_MIN",
+					"const": "LIMIT_ORDER_CURRENCY_FROM_MIN",
 					"description": "Order minimal amount in \"from\" section."
 				},
 				"value": {
@@ -71,7 +71,7 @@
 		{
 			"properties": {
 				"kind": {
-					"const": "ORDER_CURRENCY_FROM_MAX",
+					"const": "LIMIT_ORDER_CURRENCY_FROM_MAX",
 					"description": "Order maximum amount in \"from\" section."
 				},
 				"value": {
@@ -86,7 +86,7 @@
 		{
 			"properties": {
 				"kind": {
-					"const": "ORDER_CURRENCY_TO_MIN",
+					"const": "LIMIT_ORDER_CURRENCY_TO_MIN",
 					"description": "Order minimal amount in \"to\" section."
 				},
 				"value": {
@@ -101,7 +101,7 @@
 		{
 			"properties": {
 				"kind": {
-					"const": "ORDER_CURRENCY_TO_MAX",
+					"const": "LIMIT_ORDER_CURRENCY_TO_MAX",
 					"description": "Order maximum amount in \"to\" section."
 				},
 				"value": {
@@ -116,7 +116,7 @@
 		{
 			"properties": {
 				"kind": {
-					"const": "ORDER_DEVIATION_ALLOWED_UNDERPAYMENT",
+					"const": "LIMIT_ORDER_DEVIATION_ALLOWED_UNDERPAYMENT",
 					"description": "Maximum allowed underpayment to process order normally as is."
 				},
 				"deviation": {
@@ -131,7 +131,7 @@
 		{
 			"properties": {
 				"kind": {
-					"const": "ORDER_DEVIATION_ALLOWED_OVERPAYMENT",
+					"const": "LIMIT_ORDER_DEVIATION_ALLOWED_OVERPAYMENT",
 					"description": "Maximum allowed overpayment to process order normally as is."
 				},
 				"deviation": {
@@ -143,7 +143,7 @@
 		{
 			"properties": {
 				"kind": {
-					"const": "ORDER_DEVIATION_REJECT_OVERPAYMENT",
+					"const": "LIMIT_ORDER_DEVIATION_REJECT_OVERPAYMENT",
 					"description": "Maximum allowed overpayment to process an order with change. If payment over this limit then the order will be rejected."
 				},
 				"deviation": {
@@ -158,31 +158,31 @@
 		{
 			"properties": {
 				"kind": {
-					"const": "ORDER_EXPIRATION_PAID",
+					"const": "LIMIT_ORDER_EXPIRATION_PAID",
 					"description": "Expiration limit for paid orders. This limit applied for paid order only."
 				},
-				"timespan": {
+				"secondsTimespan": {
 					"$ref": "#/definitions/secondsTimespan"
 				}
 			},
 			"required": [
 				"kind",
-				"timespan"
+				"secondsTimespan"
 			]
 		},
 		{
 			"properties": {
 				"kind": {
-					"const": "ORDER_EXPIRATION_UNPAID",
+					"const": "LIMIT_ORDER_EXPIRATION_UNPAID",
 					"description": "Expiration limit for unpaid orders. This limit applied for UNpaid order only."
 				},
-				"timespan": {
+				"secondsTimespan": {
 					"$ref": "#/definitions/secondsTimespan"
 				}
 			},
 			"required": [
 				"kind",
-				"timespan"
+				"secondsTimespan"
 			]
 		}
 	]

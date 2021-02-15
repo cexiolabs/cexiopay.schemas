@@ -1,6 +1,6 @@
 {
 	"$schema": "https://cexiolabs.github.io/cryptopay.schemas/rule/limit/v1.json",
-	"kind": "ORDER_DEVIATION_ALLOWED_OVERPAYMENT",
+	"kind": "LIMIT_ORDER_DEVIATION_ALLOWED_OVERPAYMENT",
 	"deviation": {
 		"type": "FIXED",
 		"value": "0.05"
