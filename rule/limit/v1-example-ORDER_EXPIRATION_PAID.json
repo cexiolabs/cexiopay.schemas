@@ -1,5 +1,5 @@
 {
-	"$schema": "https://cexiolabs.github.io/cryptopay.schemas/rule/limit/v1.json",
+	"$schema": "https://schemas.cryptopay.band/rule/limit/v1.json",
 	"kind": "LIMIT_ORDER_EXPIRATION_PAID",
 	"secondsTimespan": 43200
 }

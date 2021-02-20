@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://cexiolabs.github.io/cryptopay.schemas/rule/limit/v1.json",
+	"$id": "https://schemas.cryptopay.band/rule/limit/v1.json",
 	"definitions": {
 		"fixedOrFactor": {
 			"type": "object",
@@ -114,45 +114,55 @@
 			]
 		},
 		{
+			"allOf": [
+				{
+					"$ref": "#/definitions/fixedOrFactor"
+				},
+				{
 			"properties": {
 				"kind": {
 					"const": "LIMIT_ORDER_DEVIATION_ALLOWED_UNDERPAYMENT",
 					"description": "Maximum allowed underpayment to process order normally as is."
-				},
-				"deviation": {
-					"$ref": "#/definitions/fixedOrFactor"
 				}
 			},
 			"required": [
-				"kind",
-				"deviation"
+						"kind"
+			]
+				}
 			]
 		},
 		{
+			"allOf": [
+				{
+					"$ref": "#/definitions/fixedOrFactor"
+				},
+				{
 			"properties": {
 				"kind": {
 					"const": "LIMIT_ORDER_DEVIATION_ALLOWED_OVERPAYMENT",
 					"description": "Maximum allowed overpayment to process order normally as is."
+						}
 				},
-				"deviation": {
-					"$ref": "#/definitions/fixedOrFactor"
+					"required": ["kind"]
 				}
+			]
 			},
-			"required": []
+		{
+			"allOf": [
+				{
+					"$ref": "#/definitions/fixedOrFactor"
 		},
 		{
 			"properties": {
 				"kind": {
 					"const": "LIMIT_ORDER_DEVIATION_REJECT_OVERPAYMENT",
 					"description": "Maximum allowed overpayment to process an order with change. If payment over this limit then the order will be rejected."
-				},
-				"deviation": {
-					"$ref": "#/definitions/fixedOrFactor"
 				}
 			},
 			"required": [
-				"kind",
-				"deviation"
+						"kind"
+					]
+				}
 			]
 		},
 		{

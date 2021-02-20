@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://cexiolabs.github.io/cryptopay.schemas/rule/commission/v1.json",
+	"$id": "https://schemas.cryptopay.band/rule/commission/v1.json",
 	"definitions": {
 		"fixedOrFactor": {
 			"type": "object",
@@ -50,63 +50,75 @@
 	},
 	"oneOf": [
 		{
-			"properties": {
-				"kind": {
-					"const": "COMMISSION_ORDER_PROCESSING_CURRENCY_FROM",
-					"description": "Order processing commission applied to \"from\" section."
-				},
-				"value": {
+			"allOf": [
+				{
 					"$ref": "#/definitions/fixedOrFactor"
+				},
+				{
+					"properties": {
+						"kind": {
+							"const": "COMMISSION_ORDER_PROCESSING_CURRENCY_FROM",
+							"description": "Order processing commission applied to \"from\" section."
+						}
+					},
+					"required": [
+						"kind"
+					]
 				}
-			},
-			"required": [
-				"kind",
-				"value"
 			]
 		},
 		{
-			"properties": {
-				"kind": {
-					"const": "COMMISSION_ORDER_PROCESSING_CURRENCY_TO",
-					"description": "Order processing commission applied to \"to\" section."
-				},
-				"value": {
+			"allOf": [
+				{
 					"$ref": "#/definitions/fixedOrFactor"
+				},
+				{
+					"properties": {
+						"kind": {
+							"const": "COMMISSION_ORDER_PROCESSING_CURRENCY_TO",
+							"description": "Order processing commission applied to \"to\" section."
+						}
+					},
+					"required": [
+						"kind"
+					]
 				}
-			},
-			"required": [
-				"kind",
-				"value"
 			]
 		},
 		{
-			"properties": {
-				"kind": {
-					"const": "COMMISSION_ORDER_EXCHANGE_CURRENCY_FROM",
-					"description": "Exchange commission applied to \"from\" section."
-				},
-				"value": {
+			"allOf": [
+				{
 					"$ref": "#/definitions/fixedOrFactor"
+				},
+				{
+					"properties": {
+						"kind": {
+							"const": "COMMISSION_ORDER_EXCHANGE_CURRENCY_FROM",
+							"description": "Exchange commission applied to \"from\" section."
+						}
+					},
+					"required": [
+						"kind"
+					]
 				}
-			},
-			"required": [
-				"kind",
-				"value"
 			]
 		},
 		{
-			"properties": {
-				"kind": {
-					"const": "COMMISSION_ORDER_EXCHANGE_CURRENCY_TO",
-					"description": "Exchange commission applied to \"to\" section."
-				},
-				"value": {
+			"allOf": [
+				{
 					"$ref": "#/definitions/fixedOrFactor"
+				},
+				{
+					"properties": {
+						"kind": {
+							"const": "COMMISSION_ORDER_EXCHANGE_CURRENCY_TO",
+							"description": "Exchange commission applied to \"to\" section."
+						}
+					},
+					"required": [
+						"kind"
+					]
 				}
-			},
-			"required": [
-				"kind",
-				"value"
 			]
 		}
 	]
