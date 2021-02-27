@@ -1,0 +1,5 @@
+{
+	"$schema": "https://schemas.cryptopay.band/v2/rule/limit/schema.json",
+	"kind": "LIMIT_ORDER_CURRENCY_FROM_MIN",
+	"value": "0.00019"
+}

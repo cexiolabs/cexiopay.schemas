@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.cryptopay.band/rule/commission/v1.json",
+	"$schema": "https://schemas.cryptopay.band/v2/rule/commission/schema.json",
 	"kind": "COMMISSION_ORDER_PROCESSING_CURRENCY_TO",
 	"type": "FACTOR",
 	"value": "0.01"
