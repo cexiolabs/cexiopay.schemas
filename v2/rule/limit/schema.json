@@ -27,7 +27,7 @@
 							"const": "FACTOR"
 						},
 						"value": {
-							"$ref": "#/definitions/percentPositive"
+							"$ref": "#/definitions/factorPositive"
 						}
 					},
 					"required": [
@@ -42,7 +42,7 @@
 			"title": "Positive financial value",
 			"pattern": "^(0|[1-9][0-9]*)(\\.([0-9]+))?$"
 		},
-		"percentPositive": {
+		"factorPositive": {
 			"type": "string",
 			"title": "Positive percent value (0.01 - mean 1%)",
 			"pattern": "^(0|[1-9][0-9]*)(\\.([0-9]+))?$"

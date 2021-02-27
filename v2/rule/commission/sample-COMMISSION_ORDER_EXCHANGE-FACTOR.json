@@ -1,6 +1,6 @@
 {
 	"$schema": "https://schemas.cryptopay.band/v2/rule/commission/schema.json",
-	"kind": "COMMISSION_ORDER_PROCESSING_CURRENCY_TO",
+	"kind": "COMMISSION_ORDER_EXCHANGE",
 	"type": "FACTOR",
-	"value": "0.01"
+	"value": "0.025"
 }

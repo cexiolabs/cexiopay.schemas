@@ -1,0 +1,6 @@
+{
+	"$schema": "https://schemas.cryptopay.band/v2/rule/commission/schema.json",
+	"kind": "COMMISSION_ORDER_PROCESSING",
+	"type": "FIXED",
+	"value": "2"
+}
