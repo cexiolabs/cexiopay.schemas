@@ -8,31 +8,23 @@
 				{
 					"title": "Fixed value",
 					"properties": {
-						"type": {
-							"const": "FIXED"
-						},
-						"value": {
+						"fixed": {
 							"$ref": "#/definitions/financialPositive"
 						}
 					},
 					"required": [
-						"type",
-						"value"
+						"fixed"
 					]
 				},
 				{
 					"title": "Percent value",
 					"properties": {
-						"type": {
-							"const": "FACTOR"
-						},
-						"value": {
+						"factor": {
 							"$ref": "#/definitions/factorPositive"
 						}
 					},
 					"required": [
-						"type",
-						"value"
+						"factor"
 					]
 				}
 			]
@@ -119,47 +111,49 @@
 					"$ref": "#/definitions/fixedOrFactor"
 				},
 				{
-			"properties": {
-				"kind": {
-					"const": "LIMIT_ORDER_DEVIATION_ALLOWED_UNDERPAYMENT",
-					"description": "Maximum allowed underpayment to process order normally as is."
-				}
-			},
-			"required": [
-						"kind"
-			]
-				}
-			]
-		},
-		{
-			"allOf": [
-				{
-					"$ref": "#/definitions/fixedOrFactor"
-				},
-				{
-			"properties": {
-				"kind": {
-					"const": "LIMIT_ORDER_DEVIATION_ALLOWED_OVERPAYMENT",
-					"description": "Maximum allowed overpayment to process order normally as is."
+					"properties": {
+						"kind": {
+							"const": "LIMIT_ORDER_DEVIATION_ALLOWED_UNDERPAYMENT",
+							"description": "Maximum allowed underpayment to process order normally as is."
 						}
-				},
-					"required": ["kind"]
+					},
+					"required": [
+						"kind"
+					]
 				}
 			]
-			},
+		},
 		{
 			"allOf": [
 				{
 					"$ref": "#/definitions/fixedOrFactor"
+				},
+				{
+					"properties": {
+						"kind": {
+							"const": "LIMIT_ORDER_DEVIATION_ALLOWED_OVERPAYMENT",
+							"description": "Maximum allowed overpayment to process order normally as is."
+						}
+					},
+					"required": [
+						"kind"
+					]
+				}
+			]
 		},
 		{
-			"properties": {
-				"kind": {
-					"const": "LIMIT_ORDER_DEVIATION_REJECT_OVERPAYMENT",
-					"description": "Maximum allowed overpayment to process an order with change. If payment over this limit then the order will be rejected."
-				}
-			},
-			"required": [
+			"allOf": [
+				{
+					"$ref": "#/definitions/fixedOrFactor"
+				},
+				{
+					"properties": {
+						"kind": {
+							"const": "LIMIT_ORDER_DEVIATION_REJECT_OVERPAYMENT",
+							"description": "Maximum allowed overpayment to process an order with change. If payment over this limit then the order will be rejected."
+						}
+					},
+					"required": [
 						"kind"
 					]
 				}

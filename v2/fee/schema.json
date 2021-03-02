@@ -39,9 +39,6 @@
 					"const": "FEE_ORDER_EXCHANGE",
 					"description": "Fee applied by order exchange."
 				},
-				"inputAmount": {
-					"$ref": "#/definitions/financialPositive"
-				},
 				"rate": {
 					"$ref": "#/definitions/financialPositive"
 				},
@@ -54,7 +51,6 @@
 			},
 			"required": [
 				"kind",
-				"inputAmount",
 				"rate",
 				"symbol",
 				"settleCurrency"

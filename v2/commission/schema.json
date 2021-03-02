@@ -9,31 +9,23 @@
 				{
 					"title": "Fixed value",
 					"properties": {
-						"type": {
-							"const": "FIXED"
-						},
-						"value": {
+						"fixed": {
 							"$ref": "#/definitions/financialPositive"
 						}
 					},
 					"required": [
-						"type",
-						"value"
+						"fixed"
 					]
 				},
 				{
 					"title": "Percent value",
 					"properties": {
-						"type": {
-							"const": "FACTOR"
-						},
-						"value": {
+						"factor": {
 							"$ref": "#/definitions/factorPositive"
 						}
 					},
 					"required": [
-						"type",
-						"value"
+						"factor"
 					]
 				}
 			]
@@ -75,9 +67,6 @@
 		{
 			"allOf": [
 				{
-					"$ref": "#/definitions/fixedOrFactor"
-				},
-				{
 					"properties": {
 						"kind": {
 							"const": "COMMISSION_ORDER_EXCHANGE",
@@ -85,11 +74,15 @@
 						},
 						"settleCurrency": {
 							"type": "string"
+						},
+						"factor": {
+							"$ref": "#/definitions/factorPositive"
 						}
 					},
 					"required": [
 						"kind",
-						"settleCurrency"
+						"settleCurrency",
+						"factor"
 					]
 				}
 			]

@@ -2,6 +2,5 @@
 	"$schema": "https://schemas.cryptopay.band/v2/commission/schema.json",
 	"kind": "COMMISSION_ORDER_EXCHANGE",
 	"settleCurrency": "USD",
-	"type": "FIXED",
-	"value": "3"
+	"fixed": "3"
 }
