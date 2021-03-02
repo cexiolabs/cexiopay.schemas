@@ -1,0 +1,7 @@
+{
+	"$schema": "https://schemas.cryptopay.band/v2/fee/schema.json",
+	"kind": "FEE_ORDER_PROCESSING",
+	"inputCurrency": "BTC",
+	"inputAmount": "0.0002",
+	"settleCurrency": "USD"
+}

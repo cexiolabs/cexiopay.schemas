@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.cryptopay.band/v2/rule/limit/schema.json",
+	"$schema": "https://schemas.cryptopay.band/v2/limit/schema.json",
 	"kind": "LIMIT_ORDER_DEVIATION_ALLOWED_OVERPAYMENT",
 	"type": "FACTOR",
 	"value": "0.08"

@@ -1,0 +1,64 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.cryptopay.band/v2/fee/schema.json",
+	"description": "A fee defines an execution context for related commission.",
+	"definitions": {
+		"financialPositive": {
+			"type": "string",
+			"title": "Positive financial value",
+			"pattern": "^(0|[1-9][0-9]*)(\\.([0-9]+))?$"
+		},
+		"exchangeSymbol": {
+			"type": "string",
+			"pattern": "^[A-Z0-9]+\\/[A-Z0-9]+$"
+		}
+	},
+	"oneOf": [
+		{
+			"properties": {
+				"kind": {
+					"const": "FEE_ORDER_PROCESSING",
+					"description": "Fee applied by order processing."
+				},
+				"inputAmount": {
+					"$ref": "#/definitions/financialPositive"
+				},
+				"settleCurrency": {
+					"type": "string"
+				}
+			},
+			"required": [
+				"kind",
+				"inputAmount",
+				"settleCurrency"
+			]
+		},
+		{
+			"properties": {
+				"kind": {
+					"const": "FEE_ORDER_EXCHANGE",
+					"description": "Fee applied by order exchange."
+				},
+				"inputAmount": {
+					"$ref": "#/definitions/financialPositive"
+				},
+				"rate": {
+					"$ref": "#/definitions/financialPositive"
+				},
+				"symbol": {
+					"$ref": "#/definitions/exchangeSymbol"
+				},
+				"settleCurrency": {
+					"type": "string"
+				}
+			},
+			"required": [
+				"kind",
+				"inputAmount",
+				"rate",
+				"symbol",
+				"settleCurrency"
+			]
+		}
+	]
+}
