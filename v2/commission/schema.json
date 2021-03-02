@@ -17,7 +17,6 @@
 						}
 					},
 					"required": [
-						"currency",
 						"type",
 						"value"
 					]
@@ -33,7 +32,6 @@
 						}
 					},
 					"required": [
-						"currency",
 						"type",
 						"value"
 					]
