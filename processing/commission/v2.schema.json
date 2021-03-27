@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.cryptopay.band/v2/commission/schema.json",
+	"$id": "https://schemas.cryptopay.band/processing/commission/v2.schema.json",
 	"description": "A commission defines a rule to make fee.",
 	"definitions": {
 		"fixedOrFactor": {

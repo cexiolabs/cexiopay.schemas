@@ -1,0 +1,5 @@
+{
+	"$schema": "https://schemas.cryptopay.band/processing/option/v2.schema.json",
+	"kind": "BLOCKCHAIN_TX_TRUSTED_CONFIRMATIONS",
+	"confirmations": 6
+}
