@@ -69,8 +69,8 @@
 				{
 					"properties": {
 						"kind": {
-							"const": "COMMISSION_ORDER_EXCHANGE",
-							"description": "Order exchange commission."
+							"const": "COMMISSION_ORDER_RATE_INSURANCE",
+							"description": "Order rate insurance commission."
 						},
 						"settleCurrency": {
 							"type": "string"
