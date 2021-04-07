@@ -1,0 +1,36 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/api/v3/order/order-simple.json",
+	"title": "Order List Item data transfer object",
+	"allOf": [
+		{
+			"$ref": "https://schemas.pay-cex.io/api/v3/order/order-base.json"
+		},
+		{
+			"type": "object",
+			"properties": {
+				"status": {
+					"type": "string",
+					"maxLength": 32,
+					"title": "",
+					"description": ""
+				},
+				"state": {
+					"type": "string",
+					"maxLength": 32,
+					"title": "",
+					"description": ""
+				},
+				"updatedAt": {
+					"ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+					"title": ""
+				}
+			},
+			"required": [
+				"status",
+				"state",
+				"updatedAt"
+			]
+		}
+	]
+}

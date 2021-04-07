@@ -1,0 +1,20 @@
+{
+	"$schema": "./order-list-simple.json",
+	"count": 2,
+	"items": [
+		{
+			"orderId": "CPO-b3987b14439543c0b7c3f627cb8d0e87",
+			"clientOrderId": "ORDER-509920352352342",
+			"updatedAt": "2020-01-17T15:10:19.128Z",
+			"status": "NEW",
+			"state": "PENDING"
+		},
+		{
+			"orderId": "CPO-6da1f03f748746588441e95e40ec429b",
+			"clientOrderId": null,
+			"updatedAt": "2020-01-17T15:10:19.128Z",
+			"status": "ACCEPTED",
+			"state": "COMPLETED"
+		}
+	]
+}

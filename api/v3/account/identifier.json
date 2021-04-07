@@ -1,0 +1,10 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/api/v3/account/identifier.json",
+	"title": "An unique identifier of an account.",
+	"description": "The identifier starts with 'CPA-' that stands of CEX.IO Pay Account. The account provides virtual storage to hold funds.",
+	"type": "string",
+	"minLength": 36,
+	"maxLength": 36,
+	"pattern": "^CPA-[0-9a-f]{32}$"
+}
