@@ -8,7 +8,7 @@
 			"type": "string"
 		},
 		"amount": {
-			"$ref": "../../../api/v3/primitives.json#definitions/financialPositive",
+			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
 			"title": "Total Due of the invoice"
 		},
 		"notes": {
@@ -27,17 +27,17 @@
 						"description": "Description of invoice item."
 					},
 					"quantity": {
-						"$ref": "../../../api/v3/primitives.json#definitions/financialPositive",
+						"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
 						"title": "Quantity",
 						"description": "Quantity of invoice item."
 					},
 					"unitPrice": {
-						"$ref": "../../../api/v3/primitives.json#definitions/financialPositive",
+						"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
 						"title": "Unit Price",
 						"description": "A price of one unit of invoice item."
 					},
 					"amount": {
-						"$ref": "../../../api/v3/primitives.json#definitions/financialPositive",
+						"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
 						"title": "Amount",
 						"description": "Amount of invoice item."
 					}
