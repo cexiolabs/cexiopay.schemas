@@ -1,0 +1,23 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/api/v3/primitives.json",
+	"title": "Declare set of primitive types",
+	"definitions": {
+		"date": {
+			"type": "string",
+			"pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z$"
+		},
+		"financial": {
+			"type": "string",
+			"pattern": "^([+-]?)(0|[1-9][0-9]*)(\\.([0-9]+))?$"
+		},
+		"financialPositive": {
+			"type": "string",
+			"pattern": "^(0|[1-9][0-9]*)(\\.([0-9]+))?$"
+		},
+		"financialNegative": {
+			"type": "string",
+			"pattern": "^-(0|[1-9][0-9]*)(\\.([0-9]+))?$"
+		}
+	}
+}
