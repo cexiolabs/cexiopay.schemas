@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v3/invoice/invoice.json",
-	"title": "Base Invoice Object",
+	"$id": "https://schemas.pay-cex.io/api/v3/invoice/context.json",
+	"title": "Base Invoice Context Object",
 	"type": "object",
 	"properties": {
 		"currency": {

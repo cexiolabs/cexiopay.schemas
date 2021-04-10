@@ -1,20 +1,40 @@
 {
-	"$schema": "https://schemas.pay-cex.io/api/v3/invoice/invoice.json",
-	"currency": "USD",
-	"amount": "145.45",
-	"notes": "Per terms of agreement. Earn Crypto button.",
-	"items": [
-		{
-			"description": "Earn Crypto button 1 : \"Earn Button, April 202X\"",
-			"quantity": "4",
-			"unitPrice": "25",
-			"amount": "100"
-		},
-		{
-			"description": "Earn Crypto button 2 : \"Earn Button, April 202X\"",
-			"quantity": "3",
-			"unitPrice": "15.15",
-			"amount": "45.45"
-		}
-	]
+	"$schema": "https://schemas.pay-cex.io/api/v3/invoice/render.json",
+	"uuid": "d16ee428-2f0a-4dd2-9f71-774aeab25c97",
+	"context": {
+		"currency": "USD",
+		"amount": "145.45",
+		"notes": "Per terms of agreement. Earn Crypto button.",
+		"items": [
+			{
+				"description": "Earn Crypto button 1 : \"Earn Button, April 202X\"",
+				"quantity": "4",
+				"unitPrice": "25",
+				"amount": "100"
+			},
+			{
+				"description": "Earn Crypto button 2 : \"Earn Button, April 202X\"",
+				"quantity": "3",
+				"unitPrice": "15.15",
+				"amount": "45.45"
+			}
+		]
+	},
+	"processing": {
+		"paymentLink": "https://gate.pay-cex.io/xxxxxxxyyyyyyyy",
+		"history": [
+			{
+				"at": "Apr 01, 2021 11:18 PM",
+				"status": "Created"
+			},
+			{
+				"at": "Apr 01, 2021 11:23 PM",
+				"status": "Sent"
+			},
+			{
+				"at": "Apr 01, 2021 11:23 PM",
+				"status": "Awaiting Payment"
+			}
+		]
+	}
 }
