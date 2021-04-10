@@ -5,7 +5,7 @@
 	"type": "object",
 	"properties": {
 		"uuid": {
-			"type": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/uuid"
+			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/uuid"
 		},
 		"context": {
 			"$ref": "https://schemas.pay-cex.io/api/v3/invoice/context.json"

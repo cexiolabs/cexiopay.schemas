@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.pay-cex.io/api/v3/invoice/render.json",
+	"$schema": "./render.json",
 	"uuid": "d16ee428-2f0a-4dd2-9f71-774aeab25c97",
 	"context": {
 		"currency": "USD",
@@ -25,15 +25,15 @@
 		"history": [
 			{
 				"at": "Apr 01, 2021 11:18 PM",
-				"status": "Created"
+				"title": "Created"
 			},
 			{
 				"at": "Apr 01, 2021 11:23 PM",
-				"status": "Sent"
+				"title": "Sent"
 			},
 			{
 				"at": "Apr 01, 2021 11:23 PM",
-				"status": "Awaiting Payment"
+				"title": "Awaiting Payment"
 			}
 		]
 	}
