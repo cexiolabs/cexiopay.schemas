@@ -1,5 +1,5 @@
 {
-	"$schema": "./render.json",
+	"$schema": "./renderer.json",
 	"uuid": "d16ee428-2f0a-4dd2-9f71-774aeab25c97",
 	"context": {
 		"currency": "USD",
