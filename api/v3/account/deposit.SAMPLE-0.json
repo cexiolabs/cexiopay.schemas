@@ -1,0 +1,9 @@
+{
+	"$schema": "./deposit.json",
+	"depositId": "CPD-9b81fff1527c4c56b3086b6d1e90aa27",
+	"status": "ACCEPTED",
+	"confirmations": 2,
+	"amount": "0.0007153",
+	"txHash": "ac39ecd710c02b2758422a7124da4d5d65ce84cf79b785370f0c25950253545f",
+	"txExplorerUrl": "https://www.blockchain.com/btc/tx/ac39ecd710c02b2758422a7124da4d5d65ce84cf79b785370f0c25950253545f"
+}

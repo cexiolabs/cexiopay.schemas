@@ -1,0 +1,25 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/api/v3/currency.json",
+	"title": "Declare currency codes",
+	"definitions": {
+		"currency": {
+			"oneOf": [
+				{
+					"$ref": "#definitions/currencyCrypto"
+				},
+				{
+					"$ref": "#definitions/currencyFiat"
+				}
+			]
+		},
+		"currencyCrypto": {
+			"type": "string",
+			"pattern": "^[A-Z]+$"
+		},
+		"currencyFiat": {
+			"type": "string",
+			"pattern": "^[A-Z]+$"
+		}
+	}
+}

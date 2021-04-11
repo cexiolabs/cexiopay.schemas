@@ -1,0 +1,58 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/api/v3/account/deposit.json",
+	"title": "Deposit data transfer object",
+	"allOf": [
+		{
+			"properties": {
+				"depositId": {
+					"$ref": "https://schemas.pay-cex.io/api/v3/account/identifier-deposit.json"
+				},
+				"currency": {
+					"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#definitions/currency"
+				},
+				"amount": {
+					"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive"
+				},
+				"status": {
+					"type": "string",
+					"maxLength": 32,
+					"title": "Deposit status"
+				}
+			},
+			"required": [
+				"depositId",
+				"currency",
+				"amount",
+				"status"
+			]
+		},
+		{
+			"oneOf": [
+				{
+					"properties": {
+						"currency": {
+							"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#definitions/currencyCrypto"
+						},
+						"confirmations": {
+							"type": "integer",
+							"minimum": 0
+						},
+						"txHash": {
+							"type": "string"
+						},
+						"txExplorerUrl": {
+							"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/uri"
+						}
+					},
+					"required": [
+						"currency",
+						"confirmations",
+						"txHash",
+						"txExplorerUrl"
+					]
+				}
+			]
+		}
+	]
+}
