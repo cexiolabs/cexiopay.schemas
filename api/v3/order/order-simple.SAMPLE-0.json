@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.pay-cex.io/api/v3/order/order-simple.json",
+	"orderId": "CPO-b3987b14439543c0b7c3f627cb8d0e87",
+	"clientOrderId": "ORDER-509920352352342",
+	"createdAt": "2021-04-09T20:44:43.011Z",
+	"updatedAt": "2021-04-09T20:45:46.007Z",
+	"status": "NEW",
+	"state": "PENDING",
+	"instrumentKind": "EXCHANGE"
+}

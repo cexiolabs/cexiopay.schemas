@@ -14,10 +14,20 @@
 			"maxLength": 128,
 			"title": "Optional. Client-side order identifier.",
 			"description": "It may used to prevent duplicate orders."
+		},
+		"instrumentKind": {
+			"type": "string",
+			"const": "EXCHANGE"
+		},
+		"createdAt": {
+			"ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+			"title": "Order creation date"
 		}
 	},
 	"required": [
 		"orderId",
-		"clientOrderId"
+		"clientOrderId",
+		"instrumentKind",
+		"createdAt"
 	]
 }
