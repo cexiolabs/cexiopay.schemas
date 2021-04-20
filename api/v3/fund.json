@@ -5,16 +5,16 @@
 	"type": "object",
 	"properties": {
 		"accountId": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/account/identifier-account.json",
-			"title":"Account identifier of funds location."
+			"$ref": "https://schemas.pay-cex.io/api/v3/account/identifier.json",
+			"title": "Account identifier of funds location."
 		},
 		"currency": {
 			"type": "string",
 			"title": "Currency of funds."
-		},
-		"amount": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
-			"title": "Amount of order funds."
 		}
-	}
+	},
+	"required": [
+		"accountId",
+		"currency"
+	]
 }
