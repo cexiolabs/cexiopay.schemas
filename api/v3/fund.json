@@ -11,10 +11,15 @@
 		"currency": {
 			"type": "string",
 			"title": "Currency of funds."
+		},
+		"amount": {
+			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+			"title": "Amount of order funds."
 		}
 	},
 	"required": [
 		"accountId",
-		"currency"
+		"currency",
+		"amount"
 	]
 }

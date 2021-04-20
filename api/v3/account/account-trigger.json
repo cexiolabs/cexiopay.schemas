@@ -11,8 +11,21 @@
 					"const": "ORDER_GENERATOR"
 				},
 				"to": {
-					"$ref": "https://schemas.pay-cex.io/api/v3/fund.json",
-					"title": "Define 'to' section of generater order."
+					"title": "Represents an order 'to' funds",
+					"type": "object",
+					"properties": {
+						"accountId": {
+							"$ref": "https://schemas.pay-cex.io/api/v3/account/identifier-account.json",
+							"title": "Account identifier of funds location."
+						},
+						"currency": {
+							"type": "string",
+							"title": "Currency of funds."
+						}
+					},
+					"required": [
+						"currency"
+					]
 				}
 			},
 			"required": [

@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.pay-cex.io/api/v3/account/account.create-request.json",
+	"clientAccountId": "unique merchant's identifier",
+	"clientAccountTag": "Account for merchant's user XXX",
+	"currency": "BTC",
+	"triggers": [
+		{
+			"kind": "ORDER_GENERATOR",
+			"to": {
+				"currency": "USD",
+				"accountId": "CPA-ffffffffffffffffffffffffffffffff"
+			}
+		}
+	]
+}
