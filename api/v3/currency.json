@@ -3,6 +3,14 @@
 	"$id": "https://schemas.pay-cex.io/api/v3/currency.json",
 	"title": "Declare currency codes",
 	"definitions": {
+		"currencyCrypto": {
+			"type": "string",
+			"pattern": "^[A-Z]+$"
+		},
+		"currencyFiat": {
+			"type": "string",
+			"pattern": "^[A-Z]+$"
+		},
 		"currency": {
 			"oneOf": [
 				{
@@ -12,14 +20,6 @@
 					"$ref": "#definitions/currencyFiat"
 				}
 			]
-		},
-		"currencyCrypto": {
-			"type": "string",
-			"pattern": "^[A-Z]+$"
-		},
-		"currencyFiat": {
-			"type": "string",
-			"pattern": "^[A-Z]+$"
 		}
 	}
 }

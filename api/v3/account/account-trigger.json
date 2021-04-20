@@ -1,0 +1,24 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/api/v3/account/account-trigger.json",
+	"title": "Account trigger",
+	"description": "Account trigger allows some automatical actions with the account. For example: Auto create exchange order on deposit, Send notification on withdrawal, etc.",
+	"oneOf": [
+		{
+			"properties": {
+				"kind": {
+					"type": "string",
+					"const": "ORDER_GENERATOR"
+				},
+				"to": {
+					"$ref": "https://schemas.pay-cex.io/api/v3/fund.json",
+					"title": "Define 'to' section of generater order."
+				}
+			},
+			"required": [
+				"kind",
+				"to"
+			]
+		}
+	]
+}
