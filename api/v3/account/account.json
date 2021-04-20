@@ -68,12 +68,14 @@
 						},
 						"network": {
 							"type": "string",
-							"maxLength": 32,
+							"minLength": 1,
+							"maxLength": 64,
 							"title": "Name of blockchain/network."
 						},
 						"address": {
 							"type": "string",
-							"maxLength": 32,
+							"minLength": 1,
+							"maxLength": 256,
 							"title": "Crypto address related to the account."
 						},
 						"addressExplorerUrl": {

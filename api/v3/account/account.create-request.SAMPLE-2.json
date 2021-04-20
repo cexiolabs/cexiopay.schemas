@@ -8,7 +8,8 @@
 			"kind": "ORDER_GENERATOR",
 			"to": {
 				"currency": "USD",
-				"accountId": "CPA-ffffffffffffffffffffffffffffffff"
+				"instrument": "VIP",
+				"accountId": "CPA-0123456789abcdef0123456789abcdef"
 			}
 		}
 	]

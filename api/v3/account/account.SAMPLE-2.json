@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.pay-cex.io/api/v3/account/account.json",
+	"accountId": "CPA-0123456789abcdef0123456789abcdef",
+	"clientAccountId": "unique merchant's identifier",
+	"clientAccountTag": "Account for merchant's user XXX",
+	"createdAt": "2020-01-17T15:57:11.183Z",
+	"income": "0",
+	"outcome": "0",
+	"balance": "0",
+	"transactions": 0,
+	"triggers": [
+		{
+			"kind": "ORDER_GENERATOR",
+			"to": {
+				"currency": "USD",
+				"instrument": "VIP",
+				"accountId": "CPA-0123456789abcdef0123456789abcdef"
+			}
+		}
+	],
+	"currency": "BTC",
+	"network": "bitcoin/mainnet",
+	"address": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}
