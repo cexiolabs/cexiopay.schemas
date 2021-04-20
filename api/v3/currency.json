@@ -5,11 +5,35 @@
 	"definitions": {
 		"currencyCrypto": {
 			"type": "string",
-			"pattern": "^[A-Z]+$"
+			"enum": [
+				"ADA",
+				"ATOM",
+				"BAT",
+				"BTC",
+				"BTT",
+				"DASH",
+				"ETH",
+				"GAS",
+				"LTC",
+				"MHC",
+				"NEO",
+				"ONG",
+				"ONT",
+				"TRX",
+				"TST",
+				"USDT",
+				"XRP",
+				"XTZ"
+			]
 		},
 		"currencyFiat": {
 			"type": "string",
-			"pattern": "^[A-Z]+$"
+			"enum": [
+				"EUR",
+				"GBP",
+				"RUB",
+				"USD"
+			]
 		},
 		"currency": {
 			"oneOf": [
