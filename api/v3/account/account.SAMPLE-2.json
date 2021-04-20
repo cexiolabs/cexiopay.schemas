@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.pay-cex.io/api/v3/account/account.json",
+	"$schema": "./account.json",
 	"accountId": "CPA-0123456789abcdef0123456789abcdef",
 	"clientAccountId": "unique merchant's identifier",
 	"clientAccountTag": "Account for merchant's user XXX",
@@ -20,5 +20,6 @@
 	],
 	"currency": "BTC",
 	"network": "bitcoin/mainnet",
-	"address": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+	"address": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+	"addressExplorerUrl": "https://blockstream.test/address/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 }

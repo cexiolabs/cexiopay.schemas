@@ -18,5 +18,6 @@
 	],
 	"currency": "BTC",
 	"network": "bitcoin/mainnet",
-	"address": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+	"address": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+	"addressExplorerUrl": "https://blockstream.test/address/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 }

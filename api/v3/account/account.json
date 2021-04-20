@@ -63,6 +63,18 @@
 					"type": "object",
 					"properties": {
 						"currency": {
+							"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#/definitions/currencyFiat",
+							"title": "Crypto currency code of the account (like 'EUR', 'USD', etc)."
+						}
+					},
+					"required": [
+						"currency"
+					]
+				},
+				{
+					"type": "object",
+					"properties": {
+						"currency": {
 							"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#/definitions/currencyCrypto",
 							"title": "Crypto currency code of the account (like 'BTC', 'ETH', etc)."
 						},
