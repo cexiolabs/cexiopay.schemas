@@ -6,12 +6,12 @@
 	"properties": {
 		"symbol": {
 			"type": "string",
-			"title": "Exchange symbol in Base/Quate notation.",
+			"title": "Exchange symbol in Base/Quote notation.",
 			"description": "See for sample https://schemas.pay-cex.io/api/v3/order/rate.symbol-sample.png"
 		},
 		"initial": {
 			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
-			"title": "Original rate provided by underlaying exchange provider."
+			"title": "Original rate provided by an underlaying exchange provider."
 		},
 		"insurance": {
 			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
@@ -28,7 +28,7 @@
 				}
 			],
 			"title": "Actual rate of the order.",
-			"description": "The actual rate of exchange operation on underlaying exchange provider."
+			"description": "The actual rate of exchange operation on an underlaying exchange provider."
 		}
 	},
 	"required": [
