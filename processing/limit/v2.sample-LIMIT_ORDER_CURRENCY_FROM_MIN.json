@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.cryptopay.band/processing/limit/v2.schema.json",
+	"$schema": "https://schemas.pay-cex.io/processing/limit/v2.schema.json",
 	"kind": "LIMIT_ORDER_CURRENCY_FROM_MIN",
 	"value": "0.00019"
 }

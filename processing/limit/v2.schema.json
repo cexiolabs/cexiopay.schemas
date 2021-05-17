@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.cryptopay.band/processing/limit/v2.schema.json",
+	"$id": "https://schemas.pay-cex.io/processing/limit/v2.schema.json",
 	"definitions": {
 		"fixedOrFactor": {
 			"type": "object",

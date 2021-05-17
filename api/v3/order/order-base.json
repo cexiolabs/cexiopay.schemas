@@ -4,7 +4,8 @@
 	"title": "Order base data",
 	"properties": {
 		"orderId": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/order/identifier.json"
+			"$ref": "https://schemas.pay-cex.io/api/v3/order/identifier.json",
+			"title":"Order unique identifier."
 		},
 		"clientOrderId": {
 			"type": [

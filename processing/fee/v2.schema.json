@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.cryptopay.band/processing/fee/v2.schema.json",
+	"$id": "https://schemas.pay-cex.io/processing/fee/v2.schema.json",
 	"description": "A fee defines an execution context for related commission.",
 	"definitions": {
 		"financialPositive": {

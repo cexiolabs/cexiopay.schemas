@@ -1,0 +1,12 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/api/v3/order/order-paid-status.json",
+	"title": "Represents a status of user payment activities.",
+	"type": "string",
+	"enum": [
+		"NONE",
+		"PARTLY_PAID",
+		"PAID",
+		"OVER_PAID"
+	]
+}
