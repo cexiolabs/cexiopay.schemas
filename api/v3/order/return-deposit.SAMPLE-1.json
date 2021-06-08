@@ -1,7 +1,7 @@
 [
 	{
-		"returnDepositId": "CPR-4a938eeffe384f07833057450cd56c8d",
-		"returnDepositClientId": "some_unique_client_identifier",
+		"returnId": "CPR-4a938eeffe384f07833057450cd56c8d",
+		"returnClientId": "some_unique_client_identifier",
 		"description": "Return crypto deposit by client's request XXX-42",
 		"risks": [
 			"ADDRESS_REUSE"
@@ -12,8 +12,8 @@
 		"returnAddress": "address#1"
 	},
 	{
-		"returnDepositId": "CPR-4a938eeffe384f07833057450cd56c8d",
-		"returnDepositClientId": "some_unique_client_identifier",
+		"returnId": "CPR-4a938eeffe384f07833057450cd56c8d",
+		"returnClientId": "some_unique_client_identifier",
 		"description": "Return crypto deposit by client's request XXX-42",
 		"risks": [],
 		"createdAt": "2021-05-24T18:22:27.024159Z",

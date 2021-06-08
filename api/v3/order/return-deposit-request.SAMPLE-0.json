@@ -1,5 +1,5 @@
 {
-	"returnDepositClientId": "some_unique_client_identifier (optional)",
+	"returnClientId": "some_unique_client_identifier (optional)",
 	"description": "Return crypto deposit by client's request XXX-42",
 	"currency": "BTC",
 	"returnAddress": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
