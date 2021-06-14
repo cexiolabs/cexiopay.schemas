@@ -1,0 +1,9 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/api/v3/order/return-list.json",
+	"title": "Return List data transfer object",
+	"type": "array",
+	"items": {
+		"$ref": "https://schemas.pay-cex.io/api/v3/order/return.json"
+	}
+}

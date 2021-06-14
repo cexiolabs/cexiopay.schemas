@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.pay-cex.io/api/v3/order/return.json",
+	"returnId": "CPR-a87264592a6b4304be70882b7f24cd1e",
+	"returnClientId": "some_unique_client_identifier",
+	"returnClientTag": null,
+	"createdAt": "2021-05-24T18:22:27.024159Z",
+	"status": "NEW",
+	"risks": [],
+	"userFeeFactor": "0.425",
+	"currency": "BTC",
+	"returnAddress": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}

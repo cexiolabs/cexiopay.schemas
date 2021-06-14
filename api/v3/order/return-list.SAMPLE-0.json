@@ -1,25 +1,27 @@
 [
 	{
 		"returnId": "CPR-4a938eeffe384f07833057450cd56c8d",
-		"returnClientId": "some_unique_client_identifier",
+		"returnClientId": "some_unique_client_identifier_1",
+		"returnClientTag": null,
 		"description": "Return crypto deposit by client's request XXX-42",
 		"risks": [
 			"ADDRESS_REUSE"
 		],
 		"createdAt": "2021-05-24T18:22:27.024159Z",
 		"status": "APPROVE_REJECTED",
-		"userFeeFactor": "0.75",
+		"userFeeFactor": "0.425",
 		"currency": "BTC",
 		"returnAddress": "address#1"
 	},
 	{
-		"returnId": "CPR-4a938eeffe384f07833057450cd56c8d",
-		"returnClientId": "some_unique_client_identifier",
+		"returnId": "CPR-a87264592a6b4304be70882b7f24cd1e",
+		"returnClientId": "some_unique_client_identifier_2",
+		"returnClientTag": null,
 		"description": "Return crypto deposit by client's request XXX-42",
 		"risks": [],
 		"createdAt": "2021-05-24T18:22:27.024159Z",
 		"status": "APPROVE_AWAITING",
-		"userFeeFactor": "1",
+		"userFeeFactor": "0.425",
 		"currency": "BTC",
 		"returnAddress": "address#2"
 	}
