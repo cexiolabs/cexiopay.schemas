@@ -1,0 +1,7 @@
+{
+	"$schema": "https://schemas.pay-cex.io/api/v3/order/return.create-request.json",
+	"autoConfirm": true,
+	"userFeeFactor": "0.425",
+	"currency": "BTC",
+	"returnAddress": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}

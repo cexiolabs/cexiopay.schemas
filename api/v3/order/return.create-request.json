@@ -17,6 +17,11 @@
 			"title": "Any client's tag",
 			"description": "API clients may save here any related data."
 		},
+		"autoConfirm": {
+			"title": "User's fee (factor)",
+			"type": "boolean",
+			"default": false
+		},
 		"userFeeFactor": {
 			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/zeroOneFactor",
 			"title": "User's fee (factor)",
