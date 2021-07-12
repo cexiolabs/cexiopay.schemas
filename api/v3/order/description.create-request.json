@@ -1,0 +1,29 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/api/v3/order/description.create-request.json",
+	"title": "Order description request data transfer object",
+	"description": "Order description-token data transfer object is used as request body for Order description. See https://developers.pay-cex.io/api/#create-description",
+	"type": "object",
+	"properties": {
+		"clientId": {
+			"type": [
+				"string"
+			],
+			"maxLength": 128,
+			"title": "Client-side order identifier.",
+			"description": "It may used to prevent duplicate returns."
+		},
+		"clientTag": {
+			"type": [
+				"string",
+				"null"
+			],
+			"maxLength": 4096,
+			"title": "Any client's tag",
+			"description": "API clients may save here any related data."
+		}
+	},
+	"required": [
+		"clientId"
+	]
+}
