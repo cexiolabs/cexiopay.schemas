@@ -5,13 +5,13 @@
 	"description": "Return creation request data transfer object is used as request body for Register Return. See https://developers.pay-cex.io/api/#register-return",
 	"type": "object",
 	"properties": {
-		"returnClientId": {
+		"clientReturnId": {
 			"type": "string",
 			"maxLength": 128,
 			"title": "Optional. Client-side return identifier.",
 			"description": "It may used to prevent duplicate returns."
 		},
-		"returnClientTag": {
+		"clientReturnTag": {
 			"type": "string",
 			"maxLength": 1024,
 			"title": "Any client's tag",

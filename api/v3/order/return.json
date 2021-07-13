@@ -9,7 +9,7 @@
 			"$ref": "https://schemas.pay-cex.io/api/v3/order/return-identifier.json",
 			"title": "Return operation unique identifier."
 		},
-		"returnClientId": {
+		"clientReturnId": {
 			"type": [
 				"string",
 				"null"
@@ -18,7 +18,7 @@
 			"title": "Optional. Client-side return identifier.",
 			"description": "It may used to prevent duplicate returns."
 		},
-		"returnClientTag": {
+		"clientReturnTag": {
 			"type": [
 				"string",
 				"null"
@@ -71,8 +71,8 @@
 	},
 	"required": [
 		"returnId",
-		"returnClientId",
-		"returnClientTag",
+		"clientReturnId",
+		"clientReturnTag",
 		"createdAt",
 		"status",
 		"risks",
