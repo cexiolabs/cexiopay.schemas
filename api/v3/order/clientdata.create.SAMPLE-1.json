@@ -1,0 +1,5 @@
+{
+	"$schema": "https://schemas.pay-cex.io/api/v3/order/clientdata.create-request.json",
+	"clientId": "some_unique_client_identifier",
+	"clientTag": "Client's order description"
+}
