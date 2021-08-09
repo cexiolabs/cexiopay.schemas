@@ -1,0 +1,126 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/api/v3/gateway/gateway_order_create.json",
+	"title": "Gateway order confirmation response data transfer object",
+	"description": "Gateway order confirmation data transfer object is used as response body for confirmation Gateway order.",
+	"type": "object",
+	"properties": {
+		"id": {
+			"$ref": "https://schemas.pay-cex.io/api/v3/gateway/identifier-account.json",
+			"title": "An unique identifier of an gateway order."
+		},
+		"createdAt": {
+			"ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+			"title": "Account creation date"
+		},
+		"updatedAt": {
+			"ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+			"title": "Account creation date"
+		},
+		"confirmedAt": {
+			"ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+			"title": "Account creation date"
+		},
+		"tag": {
+			"type": [
+				"string",
+				"null"
+			],
+			"maxLength": 1024,
+			"title": "Any client's tag",
+			"description": "Optional. Clients may save here any related data."
+		},
+		"description": null,
+		"okRedirect": null,
+		"failRedirect": null,
+		"emailSpecified": true,
+		"instrument": {
+			"type": "string",
+			"const": "CRYPTO_SELL"
+		},
+		"model": {
+			"type": "string",
+			"const": "DEFAULT"
+		},
+		"state": {
+			"enum": [
+				"AWAIT_DEPOSIT",
+				"COMPLETED"
+			],
+			"description": "Current order state."
+		},
+		"rejectionReason": null,
+		"paidStatus": "NONE",
+		"expiredAt": {
+			"ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+			"title": "Account creation date"
+		},
+		"rate": {
+			"symbol": "ETH/USD",
+			"rate": {
+				"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+				"title": "Amount",
+				"description": "Gateway order amount."
+			}
+		},
+		"from": {
+			"accountId": {
+				"$ref": "https://schemas.pay-cex.io/api/v3/account/identifier-account.json",
+				"title": "Account unique identifier."
+			},
+			"currency": {
+				"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#/definitions/currencyCrypto",
+				"title": "Currency code (like 'BTC', 'ETH', etc)."
+			},
+			"amount": {
+				"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+				"title": "Amount",
+				"description": "Gateway order amount."
+			}
+		},
+		"to": {
+			"accountId": {
+				"$ref": "https://schemas.pay-cex.io/api/v3/account/identifier-account.json",
+				"title": "Account unique identifier."
+			},
+			"currency": {
+				"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#/definitions/currencyFiat",
+				"title": "Currency code (like 'USD', 'EUR', etc)."
+			},
+			"amount": {
+				"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+				"title": "Amount",
+				"description": "Gateway order amount."
+			}
+		},
+		"deposit": {
+			"address": {
+				"type": "string",
+				"minLength": 1,
+				"maxLength": 256,
+				"title": "Incoming crypto address."
+			},
+			"uri": "ethereum:0x01472ba7396d1cc22e7e0cbe735ad2dbec499943?value=1.54845886",
+			"amount": {
+				"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+				"title": "Amount",
+				"description": "Gateway order amount."
+			},
+			"underpayment": {
+				"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+				"title": "Amount",
+				"description": "Gateway order amount."
+			}
+		},
+		"depositAcceptConfirmations": {
+			"type": "integer",
+			"minimum": 0,
+			"description": "Number of blockchain confirmations"
+		}
+	},
+	"required": [
+		"instrument",
+		"model",
+		"to"
+	]
+}

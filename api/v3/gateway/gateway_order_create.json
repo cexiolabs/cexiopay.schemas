@@ -1,0 +1,60 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/api/v3/gateway/gateway_order_create.json",
+	"title": "Gateway order data transfer object",
+	"description": "Gateway order data transfer object is used to create Gateway Order.",
+	"type": "object",
+	"properties": {
+		"id": {
+			"type": [
+				"string",
+				"null"
+			],
+			"maxLength": 128,
+			"title": "Optional. Client-side order identifier.",
+			"description": "It may used to manage orders in client systems."
+		},
+		"instrument": {
+			"type": "string",
+			"const": "CRYPTO_SELL"
+		},
+		"model": {
+			"type": "string",
+			"const": "DEFAULT"
+		},
+		"email": {
+			"type": [
+				"string",
+				"null"
+			],
+			"maxLength": 128,
+			"title": "Optional. Client email.",
+			"description": " Client email. It may used for refund."
+		},
+		"tag": {
+			"type": [
+				"string",
+				"null"
+			],
+			"maxLength": 1024,
+			"title": "Any client's tag",
+			"description": "Optional. Clients may save here any related data."
+		},
+		"to": {
+			"currency": {
+				"$ref": "https://schemas.pay-cex.iCo/api/v3/currency.json#/definitions/currencyCrypto",
+				"title": "Currency code (like 'USD', 'EUR', etc)."
+			},
+			"amount": {
+				"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+				"title": "Amount",
+				"description": "Gateway order amount."
+			}
+		}
+	},
+	"required": [
+		"instrument",
+		"model",
+		"to"
+	]
+}
