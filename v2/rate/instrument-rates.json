@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v2/rate/instrument-rates.json",
+	"$id": "https://schemas.pay-cex.io/v2/rate/instrument-rates.json",
 	"title": "Instrument rates response data transfer object",
 	"type": "object",
 	"properties": {
