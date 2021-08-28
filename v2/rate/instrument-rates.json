@@ -1,0 +1,75 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/api/v2/rate/instrument-rates.json",
+	"title": "Instrument rates response data transfer object",
+	"type": "object",
+	"properties": {
+		"instrument": {
+			"type": "string",
+			"title": "Merchant instrument name, like 'DEFAULT'"
+		},
+		"rates": {
+			"type": "array",
+			"items": {
+				"title": "Rate response data transfer object",
+				"type": "object",
+				"properties": {
+					"from": {
+						"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#/definitions/currency",
+						"title": "Currency code (like 'BTC', 'USD', etc)."
+					},
+					"to": {
+						"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#/definitions/currency",
+						"title": "Currency code (like 'BTC', 'USD', etc)."
+					},
+					"symbol": {
+						"type": "string",
+						"title": "Exchange symbol in Base/Quote notation.",
+						"description": "See for sample https://schemas.pay-cex.io/api/v3/order/rate.symbol-sample.png"
+					},
+					"rate": {
+						"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive"
+					},
+					"maintenance": {
+						"oneOf": [
+							{
+								"type": "object",
+								"properties": {
+									"scheduledUptimeAt": {
+										"oneOf": [
+											{
+												"type": "null"
+											},
+											{
+												"ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+												"title": "Maintenance end date"
+											}
+										]
+									},
+									"code": {
+										"type": "number",
+										"title": "Maintenance reason code"
+									}
+								}
+							},
+							{
+								"type": "null"
+							}
+						]
+					}
+				},
+				"required": [
+					"from",
+					"to",
+					"symbol",
+					"rate",
+					"maintenance"
+				]
+			}
+		}
+	},
+	"required": [
+		"instrument",
+		"rates"
+	]
+}
