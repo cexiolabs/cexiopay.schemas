@@ -1,0 +1,82 @@
+[
+	{
+		"instrument": "VIP_INSTRUMENT",
+		"rates": [
+			{
+				"from": "BCH",
+				"to": "USD",
+				"symbol": "BCH/USD",
+				"base": "614.8054",
+				"maintenance": null
+			},
+			{
+				"from": "BTC",
+				"to": "USD",
+				"symbol": "BTC/USD",
+				"base": "47506.526",
+				"maintenance": null
+			},
+			{
+				"from": "DASH",
+				"to": "USD",
+				"symbol": "DASH/USD",
+				"base": "230.7921",
+				"maintenance": null
+			},
+			{
+				"from": "ETH",
+				"to": "USD",
+				"symbol": "ETH/USD",
+				"base": "3152.7425",
+				"maintenance": null
+			},
+			{
+				"from": "LTC",
+				"to": "USD",
+				"symbol": "LTC/USD",
+				"base": "168.4114",
+				"maintenance": null
+			},
+			{
+				"from": "TRX",
+				"to": "USD",
+				"symbol": "TRX/USD",
+				"base": null,
+				"maintenance": {
+					"scheduledUptimeAt": null,
+					"code": 500
+				}
+			},
+			{
+				"from": "USDT",
+				"to": "USD",
+				"symbol": "USDT/USD",
+				"base": "0.97097",
+				"maintenance": null
+			}
+		]
+	},
+	{
+		"$schema": "https://schemas.pay-cex.io/v2/rate/instrument-rates.json",
+		"instrument": "DEFAULT",
+		"rates": [
+			{
+				"from": "BTC",
+				"to": "EUR",
+				"symbol": "BTC/USD",
+				"rate": "9561.44980498",
+				"maintenance": null
+			},
+			{
+				"from": "BTC",
+				"to": "EUR",
+				"symbol": "BTC/USD",
+				"rate": "11561.44980498",
+				"maintenance": {
+					"scheduledUptimeAt": "2020-06-30T00:00:00.000Z",
+					"code": 500
+				}
+			}
+		]
+	}
+]
