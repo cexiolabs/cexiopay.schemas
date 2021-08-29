@@ -28,7 +28,14 @@
 						"description": "See for sample https://schemas.pay-cex.io/api/v3/order/rate.symbol-sample.png"
 					},
 					"rate": {
-						"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive"
+						"oneOf": [
+							{
+								"type": "null"
+							},
+							{
+								"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive"
+							}
+						]
 					},
 					"maintenance": {
 						"oneOf": [
