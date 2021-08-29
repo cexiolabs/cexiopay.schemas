@@ -1,27 +1,38 @@
-[
-	{
-		"$schema": "https://schemas.pay-cex.io/v2/rate/instrument-rates.json",
-		"instrument": "DEFAULT",
-		"rates": [
-			{
-				"from": "BTC",
-				"to": "EUR",
-				"symbol": "BTC/USD",
-				"rate": "9561.44980498",
-				"maintenance": null
-			},
-			{
-				"from": "BTC",
-				"to": "EUR",
-				"symbol": "BTC/USD",
-				"rate": "11561.44980498",
-				"maintenance": {
-					"scheduledUptimeAt": "2020-06-30T00:00:00.000Z",
-					"code": 500
-				}
-			},
+{
+	"$schema": "https://schemas.pay-cex.io/v2/rate/instrument-rates.json",
+	"instrument": "DEFAULT",
+	"rates": [
+		{
+			"from": "BTC",
+			"to": "EUR",
+			"symbol": "BTC/EUR",
+			"rate": "9561.44980498",
+			"maintenance": null
+		},
+		{
+			"from": "ETH",
+			"to": "EUR",
+			"symbol": "ETH/EUR",
+			"base": "2646.1794",
+			"maintenance": null
+		},
+		{
+			"from": "BTC",
+			"to": "USD",
+			"symbol": "BTC/USD",
+			"rate": null,
+			"maintenance": {
+				"scheduledUptimeAt": "2020-06-30T00:00:00.000Z",
+				"code": 500
+			}
+		},
+		{
+			"from": "ETH",
+			"to": "USD",
+			"symbol": "ETH/USD",
+			"base": "2732.1234",
+			"maintenance": null
+		},
 		...
-		]
-	},
-...
-]
+	]
+}

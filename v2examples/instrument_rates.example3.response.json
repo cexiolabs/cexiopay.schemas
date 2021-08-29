@@ -4,16 +4,16 @@
 	"rates": [
 		{
 			"from": "BTC",
-			"to": "USD",
-			"symbol": "BTC/USD",
-			"rate": "10561.44980498",
+			"to": "EUR",
+			"symbol": "BTC/EUR",
+			"rate": "9561.44980498",
 			"maintenance": null
 		},
 		{
-			"from": "ETH",
+			"from": "BTC",
 			"to": "USD",
-			"symbol": "ETH/USD",
-			"base": "2732.1234",
+			"symbol": "BTC/USD",
+			"rate": "10561.44980498",
 			"maintenance": null
 		}
 	]
