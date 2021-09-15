@@ -1,0 +1,21 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/gateway/v2/order-rate.json",
+	"title": "Represents an order rate object.",
+	"type": "object",
+	"properties": {
+		"symbol": {
+			"type": "string",
+			"title": "Exchange symbol in Base/Quote notation.",
+			"description": "See for sample https://schemas.pay-cex.io/api/v3/order/rate.symbol-sample.png"
+		},
+		"rate": {
+			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+			"title": "Rate amount for conversion between currencies."
+		}
+	},
+	"required": [
+		"symbol",
+		"rate"
+	]
+}
