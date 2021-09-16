@@ -1,0 +1,12 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/gateway/v2/gate.create-order.response.json",
+	"title": "Represents a response body model for order creation endpoint.",
+	"type": "object",
+	"properties": {
+		"id": {
+			"$ref": "https://schemas.pay-cex.io/gateway/v2/identifier-order.json",
+			"title": "Order unique identifier."
+		}
+	}
+}

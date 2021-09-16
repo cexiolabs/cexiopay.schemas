@@ -1,0 +1,14 @@
+{
+	"id": "order-12345",
+	"instrument": "CRYPTO_SELL",
+	"model": "DEFAULT",
+	"email": "email@example.com",
+	"tag": "User defined tag",
+	"description": "Description for order-12345",
+	"okRedirect": "https://example.com/order/success",
+	"failRedirect": "https://example.com/order/failure",
+	"to": {
+		"currency": "USD",
+		"amount": "8"
+	}
+}
