@@ -1,4 +1,7 @@
 {
 	"page": "Email",
-	"callbackMethodName": "SetEmail"
+	"callbackMethodName": "SetEmail",
+	"progress": {
+		"currentPageNumber": 2
+	}
 }

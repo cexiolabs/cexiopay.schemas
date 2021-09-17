@@ -11,5 +11,8 @@
 	],
 	"toAmount": "10",
 	"toCurrency": "USD",
-	"callbackMethodName": "SetCurrencyFrom"
+	"callbackMethodName": "SetCurrencyFrom",
+	"progress": {
+		"currentPageNumber": 1
+	}
 }
