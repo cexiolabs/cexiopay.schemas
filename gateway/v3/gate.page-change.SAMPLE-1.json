@@ -1,0 +1,15 @@
+{
+	"page": "SelectCryptocurrency",
+	"rates": [
+		{
+			"from": "BTC",
+			"to": "USD",
+			"symbol": "BTC/USD",
+			"base": "44456.458",
+			"maintenance": null
+		}
+	],
+	"toAmount": "10",
+	"toCurrency": "USD",
+	"callbackMethodName": "SetCurrencyFrom"
+}
