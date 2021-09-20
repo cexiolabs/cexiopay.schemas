@@ -1,0 +1,20 @@
+{
+	"id": "7ae366f4-c193-46cf-a6c3-ba6f4ba0c93e",
+	"createdAt": "2021-09-15T13:20:36.917Z",
+	"confirmedAt": null,
+	"tag": "Some tag for invoice 7ae366f4-c193-46cf-a6c3-ba6f4ba0c93e",
+	"okRedirect": "https://example.com/order/success",
+	"failRedirect": "https://example.com/order/failure",
+	"expiredAt": null,
+	"rate": null,
+	"state": "REQUESTED",
+	"rejectionReason": null,
+	"paidStatus": null,
+	"from": null,
+	"to": {
+		"currency": "USD",
+		"amount": "8.000000000000000000"
+	},
+	"deposit": null,
+	"depositAcceptConfirmations": 5
+}

@@ -1,0 +1,11 @@
+{
+	"id": "order-12345",
+	"email": "email@example.com",
+	"tag": "User defined tag",
+	"okRedirect": "https://example.com/order/success",
+	"failRedirect": "https://example.com/order/failure",
+	"to": {
+		"currency": "USD",
+		"amount": "8"
+	}
+}

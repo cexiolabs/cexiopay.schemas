@@ -1,0 +1,31 @@
+{
+	"id": "7ae366f4-c193-46cf-a6c3-ba6f4ba0c93e",
+	"createdAt": "2021-09-15T13:20:36.917Z",
+	"confirmedAt": "2021-09-15T13:20:36.9171+03:00",
+	"tag": "Some tag for invoice 7ae366f4-c193-46cf-a6c3-ba6f4ba0c93e",
+	"okRedirect": "https://example.com/order/success",
+	"failRedirect": "https://example.com/order/failure",
+	"expiredAt": "2021-09-15T13:40:36.917101+03:00",
+	"rate": {
+		"symbol": "BTC/USD",
+		"rate": "49833.0807"
+	},
+	"state": "AWAIT_DEPOSIT",
+	"rejectionReason": null,
+	"paidStatus": "PAID",
+	"from": {
+		"currency": "BTC",
+		"amount": "0.00016054"
+	},
+	"to": {
+		"currency": "USD",
+		"amount": "8"
+	},
+	"deposit": {
+		"address": "2MwwYWnpmuiAgysbUBkqM7HLjshSy3X1TTN",
+		"uri": "bitcoin:2MwwYWnpmuiAgysbUBkqM7HLjshSy3X1TTN?amount=0&label=32af53b0-01bb-43b0-a5ef-870847919d56",
+		"amount": "0.00016054",
+		"underpayment": "0.00000000"
+	},
+	"depositAcceptConfirmations": 5
+}

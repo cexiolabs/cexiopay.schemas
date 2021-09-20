@@ -8,21 +8,6 @@
 			"$ref": "https://schemas.pay-cex.io/gateway/v2/identifier-order.json",
 			"title": "Order unique identifier."
 		},
-		"instrument": {
-			"type": "string",
-			"title": "Order instrument",
-			"const": "CRYPTO_SELL",
-			"enum": [
-				"CRYPTO_PAY",
-				"CRYPTO_SELL"
-			]
-		},
-		"model": {
-			"type": "string",
-			"title": "Order model",
-			"const": "DEFAULT",
-			"maxLength": 64
-		},
 		"email": {
 			"type": "string",
 			"title": "User email for getting the order updates",
@@ -33,11 +18,6 @@
 			"title": "Order tag",
 			"maxLength": 4096,
 			"description": "Defines a tag that was passed on order creation, it can be accessed later"
-		},
-		"description": {
-			"type": "string",
-			"title": "Order description",
-			"maxLength": 4096
 		},
 		"okRedirect": {
 			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/uri",
@@ -56,8 +36,6 @@
 	},
 	"required": [
 		"id",
-		"instrument",
-		"model",
 		"to"
 	]
 }
