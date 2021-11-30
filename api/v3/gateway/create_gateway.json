@@ -1,0 +1,56 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.pay-cex.io/gateway/v3/color-settings.json",
+	"title": "Color settings of gateway",
+	"description": "Defines schema that accepts 6 colors for Gate V3 widget UI",
+	"properties": {
+		"colors": {
+			"type": "object",
+			"title": "Order color data",
+			"properties": {
+				"ctaColor": {
+					"$ref": "#/definitions/colorHex",
+					"description": "A call to action (CTA) color"
+				},
+				"errorColor": {
+					"$ref": "#/definitions/colorHex",
+					"description": "An error message color"
+				},
+				"mainColor1": {
+					"$ref": "#/definitions/colorHex",
+					"description": "1st main color"
+				},
+				"mainColor2": {
+					"$ref": "#/definitions/colorHex",
+					"description": "2nd main color"
+				},
+				"backgroundColor": {
+					"$ref": "#/definitions/colorHex",
+					"description": "A background color"
+				},
+				"borderLineColor": {
+					"$ref": "#/definitions/colorHex",
+					"description": "A color of border line"
+				}
+			},
+			"required": [
+				"ctaColor",
+				"errorColor",
+				"mainColor1",
+				"mainColor2",
+				"backgroundColor",
+				"borderLineColor"
+			]
+		}
+	},
+	"definitions": {
+		"colorHex": {
+			"type": "string",
+			"title": "A color in HEX format",
+			"pattern": "^#[0-9A-F]{6}$"
+		}
+	},
+	"required": [
+		"colors"
+	]
+}
