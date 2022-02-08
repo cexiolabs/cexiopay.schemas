@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.cexpay.io/processing/commission/v2.schema.json",
+	"$schema": "https://schemas.cexpay.io/instrument/commission/v2.schema.json",
 	"kind": "COMMISSION_ORDER_RATE_INSURANCE",
 	"settleCurrency": "USD",
 	"factor": "0.025"

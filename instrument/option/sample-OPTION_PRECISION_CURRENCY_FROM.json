@@ -1,0 +1,5 @@
+{
+	"$schema": "https://schemas.cexpay.io/instrument/option/v2.schema.json",
+	"kind": "OPTION_PRECISION_CURRENCY_FROM",
+	"precision": 8
+}

@@ -1,0 +1,5 @@
+{
+	"$schema": "https://schemas.cexpay.io/instrument/option/v2.schema.json",
+	"kind": "OPTION_BLOCKCHAIN_TX_ACCEPTED_CONFIRMATIONS",
+	"confirmations": 2
+}

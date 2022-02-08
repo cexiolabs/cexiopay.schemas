@@ -1,5 +1,0 @@
-{
-	"$schema": "https://schemas.cexpay.io/processing/limit/v2.schema.json",
-	"kind": "LIMIT_ORDER_CURRENCY_TO_MAX",
-	"value": "10000.99"
-}

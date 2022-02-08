@@ -1,5 +1,0 @@
-{
-	"$schema": "https://schemas.cexpay.io/processing/limit/v2.schema.json",
-	"kind": "LIMIT_ORDER_EXPIRATION_PAID",
-	"secondsTimespan": 43200
-}

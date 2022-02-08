@@ -1,12 +1,12 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.cexpay.io/processing/option/v2.schema.json",
+	"$id": "https://schemas.cexpay.io/instrument/option/v2.schema.json",
 	"description": "An option defines an instrument context value.",
 	"oneOf": [
 		{
 			"properties": {
 				"kind": {
-					"const": "BLOCKCHAIN_TX_ACCEPTED_CONFIRMATIONS",
+					"const": "OPTION_BLOCKCHAIN_TX_ACCEPTED_CONFIRMATIONS",
 					"description": "Number of confirmations when transaction is party trusted. We can make processing operations but SHOULD NOT send money to user due an incoming transaction does have a high risk to be cancelled."
 				},
 				"confirmations": {
@@ -22,7 +22,7 @@
 		{
 			"properties": {
 				"kind": {
-					"const": "BLOCKCHAIN_TX_TRUSTED_CONFIRMATIONS",
+					"const": "OPTION_BLOCKCHAIN_TX_TRUSTED_CONFIRMATIONS",
 					"description": "Number of confirmations when transaction is fully trusted. We can finalize processing actions and send money to user due an incoming transaction does have a very low risk to be cancelled."
 				},
 				"confirmations": {
@@ -33,6 +33,40 @@
 			"required": [
 				"kind",
 				"confirmations"
+			]
+		},
+		{
+			"properties": {
+				"kind": {
+					"const": "OPTION_PRECISION_CURRENCY_FROM",
+					"description": "Round precision for value amount in \"to\" section of an order."
+				},
+				"precision": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 22
+				}
+			},
+			"required": [
+				"kind",
+				"precision"
+			]
+		},
+		{
+			"properties": {
+				"kind": {
+					"const": "OPTION_PRECISION_CURRENCY_TO",
+					"description": "Round precision for value amount in \"to\" section of an order."
+				},
+				"precision": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 22
+				}
+			},
+			"required": [
+				"kind",
+				"precision"
 			]
 		}
 	]

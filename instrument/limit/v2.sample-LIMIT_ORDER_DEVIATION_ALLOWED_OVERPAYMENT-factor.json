@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.cexpay.io/processing/limit/v2.schema.json",
+	"$schema": "https://schemas.cexpay.io/instrument/limit/v2.schema.json",
 	"kind": "LIMIT_ORDER_DEVIATION_ALLOWED_OVERPAYMENT",
 	"factor": "0.08"
 }
