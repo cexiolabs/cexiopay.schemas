@@ -1,4 +1,4 @@
-Copyright (c) 2020-2021 CEX.IO.LABS
+Copyright (c) 2020-2022 CEXIOLABS
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
