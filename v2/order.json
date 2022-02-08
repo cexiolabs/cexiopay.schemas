@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://cexiolabs.github.io/cryptopay.schemas/v2/order.json",
+	"$id": "https://schemas.cexpay.io/v2/order.json",
 	"title": "Order model",
 	"definitions": {
 		"orderId": {
@@ -31,7 +31,7 @@
 					"description": "Optional. Any user's info to be stored along the order."
 				},
 				"instrument": {
-					"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/definitions.json#/definitions/instrumentKind",
+					"$ref": "https://schemas.cexpay.io/v2/definitions.json#/definitions/instrumentKind",
 					"description": "Mandatory. Name of instument for the order."
 				},
 				"feeModel": {
@@ -57,19 +57,19 @@
 					"properties": {
 						"fiatCurrency": {
 							"title": "Fiat currency",
-							"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/definitions.json#/definitions/currency"
+							"$ref": "https://schemas.cexpay.io/v2/definitions.json#/definitions/currency"
 						},
 						"cryptoCurrency": {
 							"title": "Crypto currency",
-							"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/definitions.json#/definitions/currency"
+							"$ref": "https://schemas.cexpay.io/v2/definitions.json#/definitions/currency"
 						},
 						"amount": {
 							"title": "Invoice amount (string in decimal form, like \"1.23\")",
-							"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/definitions.json#/definitions/financialPositive"
+							"$ref": "https://schemas.cexpay.io/v2/definitions.json#/definitions/financialPositive"
 						},
 						"amountCurrency": {
 							"title": "Currency in which amount provided (like: BTC, USD)",
-							"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/definitions.json#/definitions/currency"
+							"$ref": "https://schemas.cexpay.io/v2/definitions.json#/definitions/currency"
 						}
 					},
 					"required": [
@@ -91,7 +91,7 @@
 					"type": "object",
 					"properties": {
 						"instrument": {
-							"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/order.json#/definitions/instrumentKind",
+							"$ref": "https://schemas.cexpay.io/v2/order.json#/definitions/instrumentKind",
 							"const": "CRYPTO_BUY"
 						},
 						"address": {
@@ -122,7 +122,7 @@
 					"type": "object",
 					"properties": {
 						"instrument": {
-							"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/order.json#/definitions/instrumentKind",
+							"$ref": "https://schemas.cexpay.io/v2/order.json#/definitions/instrumentKind",
 							"const": "CRYPTO_SELL"
 						},
 						"returnAddress": {

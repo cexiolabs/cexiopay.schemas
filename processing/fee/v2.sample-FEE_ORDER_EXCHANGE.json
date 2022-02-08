@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.pay-cex.io/processing/fee/v2.schema.json",
+	"$schema": "https://schemas.cexpay.io/processing/fee/v2.schema.json",
 	"kind": "FEE_ORDER_EXCHANGE",
 	"settleCurrency": "USD",
 	"rate": "48473.46560184",

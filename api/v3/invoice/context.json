@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v3/invoice/context.json",
+	"$id": "https://schemas.cexpay.io/api/v3/invoice/context.json",
 	"title": "Base Invoice Context Object",
 	"type": "object",
 	"properties": {
@@ -8,7 +8,7 @@
 			"type": "string"
 		},
 		"amount": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/financialPositive",
 			"title": "Total Due of the invoice"
 		},
 		"notes": {
@@ -27,17 +27,17 @@
 						"description": "Description of invoice item."
 					},
 					"quantity": {
-						"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+						"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/financialPositive",
 						"title": "Quantity",
 						"description": "Quantity of invoice item."
 					},
 					"unitPrice": {
-						"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+						"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/financialPositive",
 						"title": "Unit Price",
 						"description": "A price of one unit of invoice item."
 					},
 					"amount": {
-						"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+						"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/financialPositive",
 						"title": "Amount",
 						"description": "Amount of invoice item."
 					}

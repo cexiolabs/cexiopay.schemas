@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://cexiolabs.github.io/cryptopay.schemas/v2/definitions.json",
+	"$id": "https://schemas.cexpay.io/v2/definitions.json",
 	"definitions": {
 		"currency": {
 			"type": "string",

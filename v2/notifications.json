@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://cexiolabs.github.io/cryptopay.schemas/v2/notifications.json",
+	"$id": "https://schemas.cexpay.io/v2/notifications.json",
 	"definitions": {
 		"cryptoDeposit": {
 			"type": "object",
@@ -31,7 +31,7 @@
 									"type": "string"
 								},
 								"amount": {
-									"$ref": "https://cexiolabs.github.io/cryptopay.schemas/v2/createOrder.definitions.json#/definitions/financialPositive"
+									"$ref": "https://schemas.cexpay.io/v2/createOrder.definitions.json#/definitions/financialPositive"
 								},
 								"url": {
 									"type": "string"

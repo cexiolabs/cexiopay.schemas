@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v3/account/account-trigger.json",
+	"$id": "https://schemas.cexpay.io/api/v3/account/account-trigger.json",
 	"title": "Account trigger",
 	"description": "Account trigger allows some automatical actions with the account. For example: Auto create exchange order on deposit, Send notification on withdrawal, etc.",
 	"oneOf": [
@@ -15,7 +15,7 @@
 					"type": "object",
 					"properties": {
 						"accountId": {
-							"$ref": "https://schemas.pay-cex.io/api/v3/account/identifier-account.json",
+							"$ref": "https://schemas.cexpay.io/api/v3/account/identifier-account.json",
 							"title": "Account identifier of funds location."
 						},
 						"currency": {

@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/gateway/v3/color-settings.json",
+	"$id": "https://schemas.cexpay.io/gateway/v3/color-settings.json",
 	"title": "Color settings of gateway",
 	"description": "Defines schema that accepts 6 colors for Gate V3 widget UI",
 	"properties": {

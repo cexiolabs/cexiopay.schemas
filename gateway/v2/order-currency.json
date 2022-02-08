@@ -1,15 +1,15 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/gateway/v2/order-currency.json",
+	"$id": "https://schemas.cexpay.io/gateway/v2/order-currency.json",
 	"title": "Represents an order currency object.",
 	"type": "object",
 	"properties": {
 		"currency": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#definitions/currency",
+			"$ref": "https://schemas.cexpay.io/api/v3/currency.json#definitions/currency",
 			"title": "Currency ISO name"
 		},
 		"amount": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/financialPositive",
 			"title": "Currency amount"
 		}
 	},

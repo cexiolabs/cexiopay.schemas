@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v3/order/clientdata.create-request.json",
+	"$id": "https://schemas.cexpay.io/api/v3/order/clientdata.create-request.json",
 	"title": "Order's client data request data transfer object",
 	"description": "See https://developers.pay-cex.io/api/#set-client-data",
 	"type": "object",

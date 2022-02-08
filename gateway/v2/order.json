@@ -1,24 +1,24 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/gateway/v2/order.json",
+	"$id": "https://schemas.cexpay.io/gateway/v2/order.json",
 	"title": "Order object for the payment gateway",
 	"description": "Represents an order that was created by a specific merchant to complete the payment via payment widget",
 	"type": "object",
 	"properties": {
 		"id": {
-			"$ref": "https://schemas.pay-cex.io/gateway/v2/identifier-order.json",
+			"$ref": "https://schemas.cexpay.io/gateway/v2/identifier-order.json",
 			"title": "Order unique identifier."
 		},
 		"createdAt": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#/definitions/date",
 			"title": "Order creation date (UTC)"
 		},
 		"updatedAt": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#/definitions/date",
 			"title": "Date when the order was updated last time (UTC)"
 		},
 		"confirmedAt": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#/definitions/date",
 			"title": "Date when the order was confirmed by the Processing API (UTC)"
 		},
 		"tag": {
@@ -33,12 +33,12 @@
 			"maxLength": 4096
 		},
 		"okRedirect": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/uri",
+			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/uri",
 			"title": "Payment success redirection URI",
 			"maxLength": 512
 		},
 		"failRedirect": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/uri",
+			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/uri",
 			"title": "Payment failure redirection URI",
 			"maxLength": 512
 		},
@@ -48,11 +48,11 @@
 			"const": "true"
 		},
 		"expiredAt": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#/definitions/date",
 			"title": "Date when the order will be expired (UTC)"
 		},
 		"rate": {
-			"$ref": "https://schemas.pay-cex.io/gateway/v2/order-rate.json",
+			"$ref": "https://schemas.cexpay.io/gateway/v2/order-rate.json",
 			"title": "Order rate"
 		},
 		"instrument": {
@@ -71,27 +71,27 @@
 			"maxLength": 64
 		},
 		"state": {
-			"$ref": "https://schemas.pay-cex.io/gateway/v2/order-state.json",
+			"$ref": "https://schemas.cexpay.io/gateway/v2/order-state.json",
 			"title": "Order state"
 		},
 		"rejectionReason": {
-			"$ref": "https://schemas.pay-cex.io/gateway/v2/order-rejection-reason.json",
+			"$ref": "https://schemas.cexpay.io/gateway/v2/order-rejection-reason.json",
 			"title": "Order rejection reason"
 		},
 		"paidStatus": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/order/order-paid-status.json",
+			"$ref": "https://schemas.cexpay.io/api/v3/order/order-paid-status.json",
 			"title": "Order paid status"
 		},
 		"from": {
-			"$ref": "https://schemas.pay-cex.io/gateway/v2/order-currency.json",
+			"$ref": "https://schemas.cexpay.io/gateway/v2/order-currency.json",
 			"title": "Order currency to convert from"
 		},
 		"to": {
-			"$ref": "https://schemas.pay-cex.io/gateway/v2/order-currency.json",
+			"$ref": "https://schemas.cexpay.io/gateway/v2/order-currency.json",
 			"title": "Order currency to convert to"
 		},
 		"deposit": {
-			"$ref": "https://schemas.pay-cex.io/gateway/v2/order-deposit.json",
+			"$ref": "https://schemas.cexpay.io/gateway/v2/order-deposit.json",
 			"title": "Order deposit"
 		},
 		"depositAcceptConfirmations": {

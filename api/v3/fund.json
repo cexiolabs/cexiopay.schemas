@@ -1,11 +1,11 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v3/fund.json",
+	"$id": "https://schemas.cexpay.io/api/v3/fund.json",
 	"title": "Represents an order funds (one side).",
 	"type": "object",
 	"properties": {
 		"accountId": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/account/identifier-account.json",
+			"$ref": "https://schemas.cexpay.io/api/v3/account/identifier-account.json",
 			"title": "Account identifier of funds location."
 		},
 		"currency": {
@@ -13,7 +13,7 @@
 			"title": "Currency of funds."
 		},
 		"amount": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/financialPositive",
 			"title": "Amount of order funds."
 		}
 	},

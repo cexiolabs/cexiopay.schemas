@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v3/account/account.create-request.json",
+	"$id": "https://schemas.cexpay.io/api/v3/account/account.create-request.json",
 	"title": "Account creation request data transfer object",
 	"type": "object",
 	"properties": {
@@ -20,14 +20,14 @@
 			"maxLength": 4096
 		},
 		"currency": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#/definitions/currency",
+			"$ref": "https://schemas.cexpay.io/api/v3/currency.json#/definitions/currency",
 			"title": "Currency code of the account (like 'BTC', 'USD', etc)."
 		},
 		"triggers": {
 			"type": "array",
 			"title": "Set of triggers",
 			"items": {
-				"$ref": "https://schemas.pay-cex.io/api/v3/account/account-trigger.json"
+				"$ref": "https://schemas.cexpay.io/api/v3/account/account-trigger.json"
 			}
 		}
 	},

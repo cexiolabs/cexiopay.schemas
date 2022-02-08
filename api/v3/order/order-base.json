@@ -1,10 +1,10 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v3/order/order-base.json",
+	"$id": "https://schemas.cexpay.io/api/v3/order/order-base.json",
 	"title": "Order base data",
 	"properties": {
 		"orderId": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/order/identifier.json",
+			"$ref": "https://schemas.cexpay.io/api/v3/order/identifier.json",
 			"title":"Order unique identifier."
 		},
 		"clientOrderId": {
@@ -21,7 +21,7 @@
 			"const": "EXCHANGE"
 		},
 		"createdAt": {
-			"ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+			"ref": "https://schemas.cexpay.io/api/v3/primitives.json#/definitions/date",
 			"title": "Order creation date"
 		}
 	},

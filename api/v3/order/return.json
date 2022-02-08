@@ -1,12 +1,12 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v3/order/return.json",
+	"$id": "https://schemas.cexpay.io/api/v3/order/return.json",
 	"title": "Return creation request data transfer object",
 	"description": "Return-token data transfer object is used as request body for Register Return. See https://developers.pay-cex.io/api/#register-return",
 	"type": "object",
 	"properties": {
 		"returnId": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/order/return-identifier.json",
+			"$ref": "https://schemas.cexpay.io/api/v3/order/return-identifier.json",
 			"title": "Return operation unique identifier."
 		},
 		"clientReturnId": {
@@ -28,7 +28,7 @@
 			"description": "API clients may save here any related data."
 		},
 		"createdAt": {
-			"ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+			"ref": "https://schemas.cexpay.io/api/v3/primitives.json#/definitions/date",
 			"title": "Return creation date"
 		},
 		"status": {
@@ -53,12 +53,12 @@
 			}
 		},
 		"userFeeFactor": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/zeroOneFactor",
+			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/zeroOneFactor",
 			"title": "User's fee (factor)",
 			"description": "User's fee (factor) is a stringified decimal value in range [0.0..1.0]. The value shown - how many percent of fee will be charged for an user. Example: value = 0.0 - merchant will pay all fee; value = 0.425 - user will pay 42.5% of fee and merchant will pay 57.5% of fee; value = 1.0 - user will pay all fee."
 		},
 		"currency": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#/definitions/currencyCrypto",
+			"$ref": "https://schemas.cexpay.io/api/v3/currency.json#/definitions/currencyCrypto",
 			"title": "Currency code of the account (like 'BTC', 'ETH', etc)."
 		},
 		"returnAddress": {

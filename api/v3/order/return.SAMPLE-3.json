@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.pay-cex.io/api/v3/order/return.json",
+	"$schema": "https://schemas.cexpay.io/api/v3/order/return.json",
 	"returnId": "CPR-a87264592a6b4304be70882b7f24cd1e",
 	"clientReturnId": null,
 	"clientReturnTag": null,

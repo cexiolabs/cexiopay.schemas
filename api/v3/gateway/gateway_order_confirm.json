@@ -1,12 +1,12 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v3/gateway/gateway_order_confirm.json",
+	"$id": "https://schemas.cexpay.io/api/v3/gateway/gateway_order_confirm.json",
 	"title": "Gateway Order confirm request data transfer object",
 	"description": "Gateway Order confirm data transfer object is used to confirm Gateway Order.",
 	"type": "object",
 	"properties": {
 		"id": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/gateway/identifier-account.json",
+			"$ref": "https://schemas.cexpay.io/api/v3/gateway/identifier-account.json",
 			"title": "An unique identifier of an gateway order."
 		},
 		"email": {
@@ -25,7 +25,7 @@
 		},
 		"to": {
 			"amount": {
-				"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+				"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/financialPositive",
 				"title": "Amount",
 				"description": "Gateway order amount."
 			}

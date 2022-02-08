@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/v2/rate/instrument-rates.json",
+	"$id": "https://schemas.cexpay.io/v2/rate/instrument-rates.json",
 	"title": "Instrument rates response data transfer object",
 	"type": "object",
 	"properties": {
@@ -15,17 +15,17 @@
 				"type": "object",
 				"properties": {
 					"from": {
-						"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#/definitions/currency",
+						"$ref": "https://schemas.cexpay.io/api/v3/currency.json#/definitions/currency",
 						"title": "Currency code (like 'BTC', 'USD', etc)."
 					},
 					"to": {
-						"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#/definitions/currency",
+						"$ref": "https://schemas.cexpay.io/api/v3/currency.json#/definitions/currency",
 						"title": "Currency code (like 'BTC', 'USD', etc)."
 					},
 					"symbol": {
 						"type": "string",
 						"title": "Exchange symbol in Base/Quote notation.",
-						"description": "See for sample https://schemas.pay-cex.io/api/v3/order/rate.symbol-sample.png"
+						"description": "See for sample https://schemas.cexpay.io/api/v3/order/rate.symbol-sample.png"
 					},
 					"rate": {
 						"oneOf": [
@@ -33,7 +33,7 @@
 								"type": "null"
 							},
 							{
-								"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive"
+								"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/financialPositive"
 							}
 						]
 					},
@@ -48,7 +48,7 @@
 												"type": "null"
 											},
 											{
-												"ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+												"ref": "https://schemas.cexpay.io/api/v3/primitives.json#/definitions/date",
 												"title": "Maintenance end date"
 											}
 										]

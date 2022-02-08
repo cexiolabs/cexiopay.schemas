@@ -1,14 +1,14 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v3/invoice/renderer.json",
+	"$id": "https://schemas.cexpay.io/api/v3/invoice/renderer.json",
 	"title": "Base Invoice Render Context",
 	"type": "object",
 	"properties": {
 		"uuid": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/uuid"
+			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/uuid"
 		},
 		"context": {
-			"$ref": "https://schemas.pay-cex.io/api/v3/invoice/context.json"
+			"$ref": "https://schemas.cexpay.io/api/v3/invoice/context.json"
 		},
 		"processing": {
 			"type": "object",

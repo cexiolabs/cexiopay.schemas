@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v3/gateway/gateway_order_create.json",
+	"$id": "https://schemas.cexpay.io/api/v3/gateway/gateway_order_create.json",
 	"title": "Gateway order data transfer object",
 	"description": "Gateway order data transfer object is used to create Gateway Order.",
 	"type": "object",
@@ -46,7 +46,7 @@
 				"title": "Currency code (like 'USD', 'EUR', etc)."
 			},
 			"amount": {
-				"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+				"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/financialPositive",
 				"title": "Amount",
 				"description": "Gateway order amount."
 			}

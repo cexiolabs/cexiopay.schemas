@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v3/account/identifier-deposit.json",
+	"$id": "https://schemas.cexpay.io/api/v3/account/identifier-deposit.json",
 	"title": "An unique identifier of a deposit transaction.",
 	"description": "The identifier starts with 'CPD-' that stands of CEX.IO Pay Deposit.",
 	"type": "string",

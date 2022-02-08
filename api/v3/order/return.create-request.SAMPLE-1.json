@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.pay-cex.io/api/v3/order/return.create-request.json",
+	"$schema": "https://schemas.cexpay.io/api/v3/order/return.create-request.json",
 	"clientReturnId": "some_unique_client_identifier",
 	"userFeeFactor": "0.425",
 	"currency": "BTC",

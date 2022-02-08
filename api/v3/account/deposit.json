@@ -1,18 +1,18 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v3/account/deposit.json",
+	"$id": "https://schemas.cexpay.io/api/v3/account/deposit.json",
 	"title": "Deposit data transfer object",
 	"allOf": [
 		{
 			"properties": {
 				"depositId": {
-					"$ref": "https://schemas.pay-cex.io/api/v3/account/identifier-deposit.json"
+					"$ref": "https://schemas.cexpay.io/api/v3/account/identifier-deposit.json"
 				},
 				"currency": {
-					"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#definitions/currency"
+					"$ref": "https://schemas.cexpay.io/api/v3/currency.json#definitions/currency"
 				},
 				"amount": {
-					"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive"
+					"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/financialPositive"
 				},
 				"status": {
 					"type": "string",
@@ -32,7 +32,7 @@
 				{
 					"properties": {
 						"currency": {
-							"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#definitions/currencyCrypto"
+							"$ref": "https://schemas.cexpay.io/api/v3/currency.json#definitions/currencyCrypto"
 						},
 						"confirmations": {
 							"type": "integer",
@@ -42,7 +42,7 @@
 							"type": "string"
 						},
 						"txExplorerUrl": {
-							"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/uri"
+							"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/uri"
 						}
 					},
 					"required": [

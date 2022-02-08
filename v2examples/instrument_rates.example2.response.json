@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.pay-cex.io/v2/rate/instrument-rates.json",
+	"$schema": "https://schemas.cexpay.io/v2/rate/instrument-rates.json",
 	"instrument": "DEFAULT",
 	"rates": [
 		{

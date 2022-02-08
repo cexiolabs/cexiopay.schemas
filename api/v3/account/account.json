@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://schemas.pay-cex.io/api/v3/account/account.json",
+	"$id": "https://schemas.cexpay.io/api/v3/account/account.json",
 	"title": "Account data transfer object",
 	"description": "Account (finance) is a financial account maintained by CEX.IO Pay. This is very similar to traditional bank account.",
 	"allOf": [
@@ -8,7 +8,7 @@
 			"type": "object",
 			"properties": {
 				"accountId": {
-					"$ref": "https://schemas.pay-cex.io/api/v3/account/identifier-account.json",
+					"$ref": "https://schemas.cexpay.io/api/v3/account/identifier-account.json",
 					"title": "Account unique identifier."
 				},
 				"clientAccountId": {
@@ -29,22 +29,22 @@
 					"maxLength": 4096
 				},
 				"currency": {
-					"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#/definitions/currency",
+					"$ref": "https://schemas.cexpay.io/api/v3/currency.json#/definitions/currency",
 					"title": "Currency code of the account (like 'BTC', 'USD', etc)."
 				},
 				"balance": {
-					"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/financialPositive",
+					"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/financialPositive",
 					"title": "Account available balance."
 				},
 				"createdAt": {
-					"ref": "https://schemas.pay-cex.io/api/v3/primitives.json#/definitions/date",
+					"ref": "https://schemas.cexpay.io/api/v3/primitives.json#/definitions/date",
 					"title": "Account creation date"
 				},
 				"triggers": {
 					"type": "array",
 					"title": "Set of triggers",
 					"items": {
-						"$ref": "https://schemas.pay-cex.io/api/v3/account/account-trigger.json"
+						"$ref": "https://schemas.cexpay.io/api/v3/account/account-trigger.json"
 					}
 				}
 			},
@@ -63,7 +63,7 @@
 					"type": "object",
 					"properties": {
 						"currency": {
-							"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#/definitions/currencyFiat",
+							"$ref": "https://schemas.cexpay.io/api/v3/currency.json#/definitions/currencyFiat",
 							"title": "Fiat currency code of the account (like 'EUR', 'USD', etc)."
 						}
 					},
@@ -75,7 +75,7 @@
 					"type": "object",
 					"properties": {
 						"currency": {
-							"$ref": "https://schemas.pay-cex.io/api/v3/currency.json#/definitions/currencyCrypto",
+							"$ref": "https://schemas.cexpay.io/api/v3/currency.json#/definitions/currencyCrypto",
 							"title": "Crypto currency code of the account (like 'BTC', 'ETH', etc)."
 						},
 						"network": {
@@ -91,7 +91,7 @@
 							"title": "Crypto address related to the account."
 						},
 						"addressExplorerUrl": {
-							"$ref": "https://schemas.pay-cex.io/api/v3/primitives.json#definitions/uri"
+							"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/uri"
 						}
 					},
 					"required": [
