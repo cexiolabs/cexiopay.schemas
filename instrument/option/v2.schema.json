@@ -39,7 +39,7 @@
 			"properties": {
 				"kind": {
 					"const": "OPTION_PRECISION_CURRENCY_FROM",
-					"description": "Round precision for value amount in \"to\" section of an order."
+					"description": "Round precision for value amount in \"from\" section of an order."
 				},
 				"precision": {
 					"type": "integer",
