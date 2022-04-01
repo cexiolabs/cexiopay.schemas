@@ -1,0 +1,4 @@
+{
+	"$schema": "https://schemas.cexpay.io/api/v3/order/limit.modify-request.json",
+	"//": "TBD"
+}

@@ -1,0 +1,135 @@
+{
+	"$schema": "https://schemas.cexpay.io/api/v3/order/limit.json",
+	"current": [
+		{
+			"createdBy": {
+				"apiKey": "42119aad9812385dea7407b562b441aa"
+			},
+			"derived": {
+				"merchant": "QA",
+				"instrument": "DEFAULT"
+			},
+			"limit": {
+				"kind": "LIMIT_ORDER_CURRENCY_FROM_MAX",
+				"value": "10.999"
+			}
+		},
+		{
+			"createdBy": {
+				"apiKey": "42119aad9812385dea7407b562b441aa"
+			},
+			"derived": {
+				"merchant": "QA",
+				"instrument": "DEFAULT"
+			},
+			"limit": {
+				"kind": "LIMIT_ORDER_CURRENCY_FROM_MIN",
+				"value": "0.00019"
+			}
+		},
+		{
+			"createdBy": {
+				"apiKey": "42119aad9812385dea7407b562b441aa"
+			},
+			"derived": {
+				"merchant": "QA",
+				"instrument": "DEFAULT"
+			},
+			"limit": {
+				"kind": "LIMIT_ORDER_CURRENCY_TO_MAX",
+				"value": "10000.99"
+			}
+		},
+		{
+			"createdBy": {
+				"apiKey": "42119aad9812385dea7407b562b441aa"
+			},
+			"derived": {
+				"merchant": "QA",
+				"instrument": "DEFAULT"
+			},
+			"limit": {
+				"kind": "LIMIT_ORDER_CURRENCY_TO_MIN",
+				"value": "4.99"
+			}
+		},
+		{
+			"createdBy": {
+				"apiKey": "42119aad9812385dea7407b562b441aa"
+			},
+			"derived": {
+				"merchant": "INTERMEDIATE",
+				"instrument": "DEFAULT"
+			},
+			"limit": {
+				"kind": "LIMIT_ORDER_DEVIATION_ALLOWED_OVERPAYMENT",
+				"factor": "0.08"
+			}
+		},
+		{
+			"createdBy": {
+				"apiKey": "42119aad9812385dea7407b562b441aa"
+			},
+			"derived": {
+				"merchant": "INTERMEDIATE",
+				"instrument": "DEFAULT"
+			},
+			"limit": {
+				"kind": "LIMIT_ORDER_DEVIATION_ALLOWED_UNDERPAYMENT",
+				"factor": "0.005"
+			}
+		},
+		{
+			"createdBy": {
+				"apiKey": "42119aad9812385dea7407b562b441aa"
+			},
+			"derived": {
+				"merchant": "INTERMEDIATE",
+				"instrument": "DEFAULT"
+			},
+			"limit": {
+				"kind": "LIMIT_ORDER_DEVIATION_REJECT_OVERPAYMENT",
+				"factor": "0.03"
+			}
+		},
+		{
+			"createdBy": {
+				"apiKey": "42119aad9812385dea7407b562b441aa"
+			},
+			"derived": {
+				"merchant": "INTERMEDIATE",
+				"instrument": "DEFAULT"
+			},
+			"limit": {
+				"kind": "LIMIT_ORDER_EXPIRATION_PAID",
+				"secondsTimespan": 43200
+			}
+		},
+		{
+			"createdBy": {
+				"apiKey": "42119aad9812385dea7407b562b441aa"
+			},
+			"derived": {
+				"merchant": "INTERMEDIATE",
+				"instrument": "DEFAULT"
+			},
+			"limit": {
+				"kind": "LIMIT_ORDER_EXPIRATION_UNPAID",
+				"secondsTimespan": 1200
+			}
+		}
+	],
+	"history": [],
+	"pending": [
+		{
+			"createdBy": {
+				"identityUserEmail": "some@user.local",
+				"identityUserId": "CPU-f05f6eeac86542ab93ce261dc42b96f1"
+			},
+			"limit": {
+				"kind": "LIMIT_ORDER_EXPIRATION_PAID",
+				"secondsTimespan": 86400
+			}
+		}
+	]
+}

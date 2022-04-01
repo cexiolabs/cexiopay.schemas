@@ -1,0 +1,6 @@
+{
+	"$schema": "https://schemas.cexpay.io/api/v3/order/limit.json",
+	"current": [],
+	"history": [],
+	"pending": []
+}
