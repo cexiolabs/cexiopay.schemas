@@ -1,0 +1,41 @@
+{
+	"id": "7ae366f4-c193-46cf-a6c3-ba6f4ba0c93e",
+	"createdAt": "2021-09-15T13:20:36.917Z",
+	"confirmedAt": "2021-09-15T13:20:36.916927+03:00",
+	"tag": "Some tag for invoice 7ae366f4-c193-46cf-a6c3-ba6f4ba0c93e",
+	"okRedirect": "https://example.com/order/success",
+	"failRedirect": "https://example.com/order/failure",
+	"expiredAt": "2021-09-15T13:40:36.916929+03:00",
+	"rate": {
+		"symbol": "USDT/USD",
+		"rate": "1.0022"
+	},
+	"state": "AWAIT_DEPOSIT",
+	"rejectionReason": null,
+	"paidStatus": "NONE",
+	"from": {
+		"currency": "USDT",
+		"amount": "8.0176"
+	},
+	"to": {
+		"currency": "USD",
+		"amount": "8"
+	},
+	"deposit": {
+		"addresses": [
+			{
+				"address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+				"uri": "ethereum:0xdac17f958d2ee523a2206206994597c13d831ec7",
+				"network": "erc20"
+			},
+			{
+				"address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+				"uri": "tron:TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+				"network": "trc20"
+			}
+		],
+		"amount": "0",
+		"underpayment": "8.0176"
+	},
+	"depositAcceptConfirmations": 5
+}
