@@ -10,15 +10,15 @@
 			"title": "Order unique identifier."
 		},
 		"createdAt": {
-			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#/definitions/date",
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#/definitions/date",
 			"title": "Order creation date (UTC)"
 		},
 		"updatedAt": {
-			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#/definitions/date",
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#/definitions/date",
 			"title": "Date when the order was updated last time (UTC)"
 		},
 		"confirmedAt": {
-			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#/definitions/date",
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#/definitions/date",
 			"title": "Date when the order was confirmed by the Processing API (UTC)"
 		},
 		"tag": {
@@ -33,12 +33,12 @@
 			"maxLength": 4096
 		},
 		"okRedirect": {
-			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/uri",
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#definitions/uri",
 			"title": "Payment success redirection URI",
 			"maxLength": 512
 		},
 		"failRedirect": {
-			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/uri",
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#definitions/uri",
 			"title": "Payment failure redirection URI",
 			"maxLength": 512
 		},
@@ -48,7 +48,7 @@
 			"const": "true"
 		},
 		"expiredAt": {
-			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#/definitions/date",
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#/definitions/date",
 			"title": "Date when the order will be expired (UTC)"
 		},
 		"rate": {
@@ -79,7 +79,7 @@
 			"title": "Order rejection reason"
 		},
 		"paidStatus": {
-			"$ref": "https://schemas.cexpay.io/api/v3/order/order-paid-status.json",
+			"$ref": "https://schemas.cexpay.io/processing/v3/order/order-paid-status.json",
 			"title": "Order paid status"
 		},
 		"from": {

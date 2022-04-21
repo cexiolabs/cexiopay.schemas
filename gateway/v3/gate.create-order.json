@@ -20,12 +20,12 @@
 			"description": "Defines a tag that was passed on order creation, it can be accessed later"
 		},
 		"okRedirect": {
-			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/uri",
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#definitions/uri",
 			"title": "Payment success redirection URI",
 			"maxLength": 512
 		},
 		"failRedirect": {
-			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/uri",
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#definitions/uri",
 			"title": "Payment failure redirection URI",
 			"maxLength": 512
 		},

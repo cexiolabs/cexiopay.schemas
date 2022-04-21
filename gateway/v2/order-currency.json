@@ -5,11 +5,11 @@
 	"type": "object",
 	"properties": {
 		"currency": {
-			"$ref": "https://schemas.cexpay.io/api/v3/currency.json#definitions/currency",
+			"$ref": "https://schemas.cexpay.io/processing/v3/currency.json#definitions/currency",
 			"title": "Currency ISO name"
 		},
 		"amount": {
-			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/financialPositive",
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#definitions/financialPositive",
 			"title": "Currency amount"
 		}
 	},

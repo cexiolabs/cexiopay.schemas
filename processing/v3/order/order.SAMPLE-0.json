@@ -1,0 +1,301 @@
+{
+	"$schema": "https://schemas.cexpay.io/processing/v3/order/order.json",
+	"orderId": "CPO-be0eb3002e1a4261a15b52f916b6bf02",
+	"clientOrderId": "id-1234567890",
+	"clientOrderTag": "My first order",
+	"instrument": "DEFAULT",
+	"processingStatus": "PENDING",
+	"processingPhase": "AWAIT_DEPOSIT",
+	"paidStatus": "NONE",
+	"createdAt": "2022-04-14T10:49:24.996Z",
+	"updatedAt": "2022-04-14T11:09:54.071Z",
+	"expiredAt": "2022-04-14T11:09:24.996Z",
+	"fromVariants": [
+		{
+			"paymentTransport": "blockchain:bitcoin/mainnet",
+			"accountId": "CPA-edc312a4073945b39ef5470bdcb3c69a",
+			"currency": "BTC",
+			"amount": "0.01333765592",
+			"rate": {
+				"symbol": "BTC/USD",
+				"initial": "37486.9",
+				"exchange": null,
+				"insurance": "37112.9681725"
+			},
+			"cashFlow": {
+				"initialExchangeRate": "37486.9",
+				"insuranceExchangeRate": "37112.9681725",
+				"processingCommissions": [
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"fixed": "1.00",
+						"merchant": "INTERNAL_DEBUG"
+					},
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"factor": "0.015",
+						"merchant": "INTERNAL_DEBUG"
+					},
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"fixed": "1.00",
+						"merchant": "DEBUG"
+					},
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"factor": "0.015",
+						"merchant": "DEBUG"
+					}
+				],
+				"rateInsuranceCommissions": [
+					{
+						"kind": "COMMISSION_ORDER_RATE_INSURANCE",
+						"settleCurrency": "USD",
+						"factor": "0.005",
+						"merchant": "INTERNAL_DEBUG",
+						"upstreamExchangeRate": "37486.9",
+						"insuranceExchangeRate": "37299.4655"
+					},
+					{
+						"kind": "COMMISSION_ORDER_RATE_INSURANCE",
+						"settleCurrency": "USD",
+						"factor": "0.005",
+						"merchant": "DEBUG",
+						"upstreamExchangeRate": "37299.4655",
+						"insuranceExchangeRate": "37112.9681725"
+					}
+				]
+			},
+			"deposit": {
+				"kind": "BTC",
+				"network": "bitcoin/mainnet",
+				"address": "3LsRaCQ4camxFyEHqYXCP6viEiP6sU1L42",
+				"addressExplorerUrl": "https://www.blockchain.com/btc/address/3LsRaCQ4camxFyEHqYXCP6viEiP6sU1L42",
+				"paidAmount": "0",
+				"remainAmount": "0.01333765592",
+				"paymentUri": "bitcoin:3LsRaCQ4camxFyEHqYXCP6viEiP6sU1L42",
+				"transactions": []
+			}
+		},
+		{
+			"paymentTransport": "blockchain:ethereum/mainnet",
+			"accountId": "CPA-cb4a7c94fc4c4c129d3499743a384b0d",
+			"currency": "ETH",
+			"amount": "0.17615237355",
+			"rate": {
+				"symbol": "ETH/USD",
+				"initial": "2838.38",
+				"exchange": null,
+				"insurance": "2810.0671595"
+			},
+			"cashFlow": {
+				"initialExchangeRate": "2838.38",
+				"insuranceExchangeRate": "2810.0671595",
+				"processingCommissions": [
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"fixed": "1.00",
+						"merchant": "INTERNAL_DEBUG"
+					},
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"factor": "0.015",
+						"merchant": "INTERNAL_DEBUG"
+					},
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"fixed": "1.00",
+						"merchant": "DEBUG"
+					},
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"factor": "0.015",
+						"merchant": "DEBUG"
+					}
+				],
+				"rateInsuranceCommissions": [
+					{
+						"kind": "COMMISSION_ORDER_RATE_INSURANCE",
+						"settleCurrency": "USD",
+						"factor": "0.005",
+						"merchant": "INTERNAL_DEBUG",
+						"upstreamExchangeRate": "2838.38",
+						"insuranceExchangeRate": "2824.1881"
+					},
+					{
+						"kind": "COMMISSION_ORDER_RATE_INSURANCE",
+						"settleCurrency": "USD",
+						"factor": "0.005",
+						"merchant": "DEBUG",
+						"upstreamExchangeRate": "2824.1881",
+						"insuranceExchangeRate": "2810.0671595"
+					}
+				]
+			},
+			"deposit": {
+				"kind": "ETH",
+				"network": "ethereum/mainnet",
+				"address": "0x9c71fbe2d28080b8afa88cea8a1e339de2c09d44",
+				"addressExplorerUrl": "https://etherscan.io/address/0x9c71fbe2d28080b8afa88cea8a1e339de2c09d44",
+				"paidAmount": "0",
+				"remainAmount": "0.17615237355",
+				"paymentUri": "ethereum:0x9c71fbe2d28080b8afa88cea8a1e339de2c09d44",
+				"transactions": []
+			}
+		},
+		{
+			"paymentTransport": "blockchain:ethereum/mainnet",
+			"accountId": "CPA-3407bbf170534daeb2a84ba86c0e404e",
+			"currency": "USDT",
+			"amount": "496.538102",
+			"rate": {
+				"symbol": "USDT/USD",
+				"initial": "0.9979",
+				"exchange": null,
+				"insurance": "0.99690235"
+			},
+			"cashFlow": {
+				"initialExchangeRate": "0.9979",
+				"insuranceExchangeRate": "0.99690235",
+				"processingCommissions": [
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"fixed": "1.00",
+						"merchant": "INTERNAL_DEBUG"
+					},
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"factor": "0.015",
+						"merchant": "INTERNAL_DEBUG"
+					},
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"fixed": "1.00",
+						"merchant": "DEBUG"
+					},
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"factor": "0.015",
+						"merchant": "DEBUG"
+					}
+				],
+				"rateInsuranceCommissions": [
+					{
+						"kind": "COMMISSION_ORDER_RATE_INSURANCE",
+						"settleCurrency": "USD",
+						"factor": "0.0005",
+						"merchant": "INTERNAL_DEBUG",
+						"upstreamExchangeRate": "0.9979",
+						"insuranceExchangeRate": "0.99740105"
+					},
+					{
+						"kind": "COMMISSION_ORDER_RATE_INSURANCE",
+						"settleCurrency": "USD",
+						"factor": "0.0005",
+						"merchant": "DEBUG",
+						"upstreamExchangeRate": "0.99740105",
+						"insuranceExchangeRate": "0.99690235"
+					}
+				]
+			},
+			"deposit": {
+				"kind": "USDT",
+				"network": "ethereum/mainnet",
+				"address": "0x9c71fbe2d28080b8afa88cea8a1e339de2c09d44",
+				"addressExplorerUrl": "https://etherscan.io/token/0xdAC17F958D2ee523a2206206994597C13D831ec7?a=0x9c71fbe2d28080b8afa88cea8a1e339de2c09d44",
+				"paidAmount": "0",
+				"remainAmount": "496.538102",
+				"paymentUri": "ethereum:0x9c71fbe2d28080b8afa88cea8a1e339de2c09d44",
+				"transactions": []
+			}
+		},
+		{
+			"paymentTransport": "blockchain:binancesmartchain/mainnet",
+			"accountId": "CPA-6d7d4e9f43bb4594905933855123b9a0",
+			"currency": "USDT",
+			"amount": "496.8871775",
+			"rate": {
+				"symbol": "USDT/USD",
+				"initial": "0.9972",
+				"exchange": null,
+				"insurance": "0.996202"
+			},
+			"cashFlow": {
+				"initialExchangeRate": "0.9972",
+				"insuranceExchangeRate": "0.996202",
+				"processingCommissions": [
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"fixed": "1.00",
+						"merchant": "INTERNAL_DEBUG"
+					},
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"factor": "0.015",
+						"merchant": "INTERNAL_DEBUG"
+					},
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"fixed": "1.00",
+						"merchant": "DEBUG"
+					},
+					{
+						"kind": "COMMISSION_ORDER_PROCESSING",
+						"settleCurrency": "USD",
+						"factor": "0.015",
+						"merchant": "DEBUG"
+					}
+				],
+				"rateInsuranceCommissions": [
+					{
+						"kind": "COMMISSION_ORDER_RATE_INSURANCE",
+						"settleCurrency": "USD",
+						"factor": "0.0005",
+						"merchant": "INTERNAL_DEBUG",
+						"upstreamExchangeRate": "0.9972",
+						"insuranceExchangeRate": "0.996701"
+					},
+					{
+						"kind": "COMMISSION_ORDER_RATE_INSURANCE",
+						"settleCurrency": "USD",
+						"factor": "0.0005",
+						"merchant": "DEBUG",
+						"upstreamExchangeRate": "0.996701",
+						"insuranceExchangeRate": "0.996202"
+					}
+				]
+			},
+			"deposit": {
+				"kind": "USDT",
+				"network": "binancesmartchain/mainnet",
+				"address": "0x9b63de2707d232392eb44cace38641568f520e17",
+				"addressExplorerUrl": "https://bscscan.com/token/0x55d398326f99059ff775485246999027b3197955?a=0x9b63de2707d232392eb44cace38641568f520e17",
+				"paidAmount": "0",
+				"remainAmount": "496.538102",
+				"paymentUri": "binancesmartchain:0x9b63de2707d232392eb44cace38641568f520e17",
+				"transactions": []
+			}
+		}
+	],
+	"to": {
+		"accountId": "CPA-959d3602138a458fbee6651b3681fbe7",
+		"currency": "USD",
+		"amount": "495"
+	},
+	"fees": []
+}

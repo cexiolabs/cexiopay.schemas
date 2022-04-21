@@ -1,0 +1,34 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.cexpay.io/processing/v3/order/cash-flow.json",
+	"title": "Represents an information about .",
+	"type": "object",
+	"properties": {
+		"initialExchangeRate": {
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#definitions/financialPositive"
+		},
+		"insuranceExchangeRate": {
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#definitions/financialPositive"
+		},
+		"totalFeeAmountCurrencyFrom": {
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#definitions/financialPositive"
+		},
+		"totalFeeAmountCurrencyTo": {
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#definitions/financialPositive"
+		},
+		"processingCommissions": {
+			"type":"array"
+		},
+		"rateInsuranceCommissions": {
+			"type":"array"
+		}
+	},
+	"required": [
+		"initialExchangeRate",
+		"insuranceExchangeRate",
+		"totalFeeAmountCurrencyFrom",
+		"totalFeeAmountCurrencyTo",
+		"processingCommissions",
+		"rateInsuranceCommissions"
+	]
+}

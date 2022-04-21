@@ -1,0 +1,27 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.cexpay.io/processing/v3/order/clientdata.create-request.json",
+	"title": "Order's client data request data transfer object",
+	"description": "See https://developers.pay-cex.io/api/#set-client-data",
+	"type": "object",
+	"properties": {
+		"clientOrderId": {
+			"type": [
+				"string"
+			],
+			"maxLength": 128,
+			"title": "Client-side order identifier.",
+			"description": "API clients may save here own identifier. Should be unique per merchant."
+		},
+		"clientOrderTag": {
+			"type": [
+				"string",
+				"null"
+			],
+			"maxLength": 4096,
+			"title": "Any client's tag",
+			"description": "API clients may save here any related data."
+		}
+	},
+	"required": []
+}

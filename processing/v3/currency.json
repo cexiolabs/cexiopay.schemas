@@ -1,0 +1,53 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.cexpay.io/processing/v3/currency.json",
+	"title": "Declare currency codes",
+	"definitions": {
+		"currencyCrypto": {
+			"type": "string",
+			"enum": [
+				"ADA",
+				"ATOM",
+				"BAT",
+				"BCH",
+				"BNB",
+				"BTC",
+				"BTT",
+				"DASH",
+				"ETH",
+				"GAS",
+				"LTC",
+				"MATIC",
+				"MHC",
+				"NEO",
+				"ONG",
+				"ONT",
+				"TRX",
+				"TST",
+				"USDC",
+				"USDT",
+				"XRP",
+				"XTZ"
+			]
+		},
+		"currencyFiat": {
+			"type": "string",
+			"enum": [
+				"EUR",
+				"GBP",
+				"RUB",
+				"USD"
+			]
+		},
+		"currency": {
+			"oneOf": [
+				{
+					"$ref": "#/definitions/currencyCrypto"
+				},
+				{
+					"$ref": "#/definitions/currencyFiat"
+				}
+			]
+		}
+	}
+}

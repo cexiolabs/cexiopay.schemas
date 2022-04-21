@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.cexpay.io/processing/v3/order/order-simple.json",
+	"title": "Order Simple data transfer object",
+	"description": "Extends Order Base with minimal information such 'status', 'state' and 'updatedAt'. This used by clients to fetch/sync execution step of big bunch of orders.",
+	"allOf": [
+		{
+			"$ref": "https://schemas.cexpay.io/processing/v3/order/order-base.json"
+		},
+		{
+			"oneOf": [
+				{
+					"type": "object",
+					"properties": {
+						"status": {
+							"type": "string",
+							"maxLength": 32,
+							"title": "Processing status",
+							"description": "Processing status answers to question 'What is processing workflow doing right now?'. Find available statuses in official documentation https://developers.pay-cex.io/"
+						},
+						"state": {
+							"type": "string",
+							"maxLength": 32,
+							"title": "Processing state",
+							"description": "Processing state answers to question 'How is processing workflow doing a job right now?'. Find available states in official documentation https://developers.pay-cex.io/"
+						},
+						"updatedAt": {
+							"ref": "https://schemas.cexpay.io/processing/v3/primitives.json#/definitions/date",
+							"title": "A date of last modification order-related data"
+						}
+					},
+					"required": [
+						"status",
+						"state",
+						"updatedAt"
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.cexpay.io/processing/v3/fund.json",
+	"title": "Represents an order funds (one side).",
+	"type": "object",
+	"properties": {
+		"accountId": {
+			"$ref": "https://schemas.cexpay.io/processing/v3/account/identifier-account.json",
+			"title": "Account identifier of funds location."
+		},
+		"currency": {
+			"type": "string",
+			"title": "Currency of funds."
+		},
+		"amount": {
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#definitions/financialPositive",
+			"title": "Amount of order funds."
+		}
+	},
+	"required": [
+		"accountId",
+		"currency",
+		"amount"
+	]
+}

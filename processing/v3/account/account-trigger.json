@@ -1,0 +1,37 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.cexpay.io/processing/v3/account/account-trigger.json",
+	"title": "Account trigger",
+	"description": "Account trigger allows some automatical actions with the account. For example: Auto create exchange order on deposit, Send notification on withdrawal, etc.",
+	"oneOf": [
+		{
+			"properties": {
+				"kind": {
+					"type": "string",
+					"const": "ORDER_GENERATOR"
+				},
+				"to": {
+					"title": "Represents an order 'to' funds",
+					"type": "object",
+					"properties": {
+						"accountId": {
+							"$ref": "https://schemas.cexpay.io/processing/v3/account/identifier-account.json",
+							"title": "Account identifier of funds location."
+						},
+						"currency": {
+							"type": "string",
+							"title": "Currency of funds."
+						}
+					},
+					"required": [
+						"currency"
+					]
+				}
+			},
+			"required": [
+				"kind",
+				"to"
+			]
+		}
+	]
+}

@@ -1,4 +1,0 @@
-{
-	"$schema": "https://schemas.cexpay.io/api/v3/order/clientdata.create-request.json",
-	"clientOrderId": "some_unique_client_identifier"
-}

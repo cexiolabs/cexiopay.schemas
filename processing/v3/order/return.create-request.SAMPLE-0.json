@@ -1,0 +1,8 @@
+{
+	"$schema": "https://schemas.cexpay.io/processing/v3/order/return.create-request.json",
+	"clientReturnId": "some_unique_client_identifier",
+	"clientReturnTag": "Return crypto deposit by client's request XXX-42",
+	"userFeeFactor": "0.425",
+	"currency": "BTC",
+	"returnAddress": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}

@@ -9,16 +9,16 @@
 			"title": "Order deposit address"
 		},
 		"uri": {
-			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/uri",
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#definitions/uri",
 			"title": "Uri with bitcoin schema which is used for QR code generation in the payment widget"
 		},
 		"amount": {
-			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/financialPositive",
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#definitions/financialPositive",
 			"title": "Order deposit amount",
 			"description": "Defines how much money was already top up to the deposit"
 		},
 		"underpayment": {
-			"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#definitions/financial",
+			"$ref": "https://schemas.cexpay.io/processing/v3/primitives.json#definitions/financial",
 			"title": "Order underpayment amount",
 			"description": "Defines how much money left to pay (if number is positive), or the overpay amount (if number is negative), or zero value (if everything is paid as expected)"
 		}

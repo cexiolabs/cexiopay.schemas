@@ -1,0 +1,120 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.cexpay.io/processing/v3/order/limit.json",
+	"definitions": {
+		"unsavedOrderLimit": {
+			"type": "object",
+			"properties": {
+				"createdAt": {
+					"ref": "https://schemas.cexpay.io/processing/v3/primitives.json#/definitions/date",
+					"title": "Order limit creation date"
+				},
+				"createdBy": {
+					"oneOf": [
+						{
+							"type": "object",
+							"properties": {
+								"apiKey": {
+									"type": "string"
+								}
+							},
+							"required": [
+								"apiKey"
+							],
+							"additionalProperties": false
+						},
+						{
+							"type": "object",
+							"properties": {
+								"identityUserEmail": {
+									"type": "string"
+								},
+								"identityUserId": {
+									"type": [
+										"string",
+										"null"
+									]
+								}
+							},
+							"required": [
+								"identityUserEmail",
+								"identityUserId"
+							],
+							"additionalProperties": false
+						}
+					],
+					"title": "Define creation actor"
+				},
+				"limit": {
+					"$ref": "https://schemas.cexpay.io/instrument/limit/v2.schema.json",
+					"title": "Limit rule"
+				}
+			},
+			"required": [
+				"createdBy",
+				"limit"
+			],
+			"additionalProperties": true
+		},
+		"savedOrderLimit": {
+			"allOf": [
+				{
+					"$ref": "#/definitions/unsavedOrderLimit"
+				},
+				{
+					"type": "object",
+					"properties": {
+						"derived": {
+							"anyOf": [
+								{
+									"type": "object",
+									"properties": {
+										"merchant": {
+											"type": "string"
+										},
+										"instrument": {
+											"type": "string"
+										}
+									},
+									"required": [
+										"merchant",
+										"instrument"
+									],
+									"additionalProperties": false
+								},
+								{
+									"const": null
+								}
+							],
+							"title": "Declare source of an instrument rule"
+						}
+					},
+					"required": [
+						"derived"
+					],
+					"additionalProperties": true
+				}
+			]
+		}
+	},
+	"properties": {
+		"current": {
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/savedOrderLimit"
+			}
+		},
+		"history": {
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/savedOrderLimit"
+			}
+		},
+		"pending": {
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/unsavedOrderLimit"
+			}
+		}
+	}
+}

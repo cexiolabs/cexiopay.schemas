@@ -1,0 +1,6 @@
+{
+	"$schema": "https://schemas.cexpay.io/processing/v3/account/account.create-request.json",
+	"clientAccountId": "unique merchant's identifier",
+	"clientAccountTag": "Account for merchant's user XXX",
+	"currency": "BTC"
+}

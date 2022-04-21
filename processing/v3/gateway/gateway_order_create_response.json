@@ -1,0 +1,16 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.cexpay.io/processing/v3/gateway/gateway_order_create_response.json",
+	"title": "Gateway order creation response data transfer object",
+	"description": "Return-token data transfer object is used as response body for creation Gateay order.",
+	"type": "object",
+	"properties": {
+		"id": {
+		"$ref": "https://schemas.cexpay.io/processing/v3/gateway/identifier-account.json",
+		"title": "An unique identifier of an gateway order."
+	  }
+	},
+	"required": [
+		"id"
+	]
+}

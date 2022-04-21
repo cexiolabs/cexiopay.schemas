@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schemas.cexpay.io/processing/v3/rate/rate.json",
+	"instrument": "DEFAULT",
+	"rates": [
+		{
+			"from": {
+				"currency": "BCH",
+				"transport": "blockchain:bitcoincash/mainnet"
+			},
+			"to": {
+				"currency": "USD",
+				"transport": "cex"
+			},
+			"symbol": "BCH/USD",
+			"maintenance": {
+				"scheduledUptimeAt": "2022-04-21T05:33:16Z",
+				"code": 42
+			}
+		},
+		{
+			"from": {
+				"currency": "BTC",
+				"transport": "blockchain:bitcoin/mainnet"
+			},
+			"to": {
+				"currency": "USD",
+				"transport": "cex"
+			},
+			"symbol": "BTC/USD",
+			"rate": "42577.44"
+		},
+		{
+			"from": {
+				"currency": "DASH",
+				"transport": "blockchain:dash/mainnet"
+			},
+			"to": {
+				"currency": "USD",
+				"transport": "cex"
+			},
+			"symbol": "DASH/USD",
+			"maintenance": {
+				"code": 17,
+				"scheduledUptimeAt": null
+			}
+		}
+	]
+}

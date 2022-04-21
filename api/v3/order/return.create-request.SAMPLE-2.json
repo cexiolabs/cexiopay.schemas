@@ -1,6 +1,0 @@
-{
-	"$schema": "https://schemas.cexpay.io/api/v3/order/return.create-request.json",
-	"userFeeFactor": "0.425",
-	"currency": "BTC",
-	"returnAddress": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-}

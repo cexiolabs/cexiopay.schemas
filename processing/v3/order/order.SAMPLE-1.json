@@ -1,0 +1,97 @@
+{
+	"$schema": "https://schemas.cexpay.io/processing/v3/order/order.json",
+	"to": {
+		"amount": "495",
+		"currency": "USD",
+		"accountId": "CPA-16377528fdda4d538411799c581bc0ed"
+	},
+	"fees": [],
+	"from": {
+		"amount": "496.538102",
+		"currency": "USDT",
+		"accountId": "CPA-3e752fff38e440508083f76573810b64"
+	},
+	"rate": {
+		"symbol": "USDT/USD",
+		"initial": "0.99690235",
+		"exchange": null,
+		"insurance": "0.99690235"
+	},
+	"model": "DEFAULT",
+	"state": "NEW",
+	"status": "PENDING",
+	"deposit": {
+		"kind": "USDT",
+		"address": "0x1acb4fdaf52371aa970ed1d39f44b46763d55b63",
+		"network": "ethereum/mainnet",
+		"paidAmount": "803.803299",
+		"paymentUri": "ethereum:0x1acb4fdaf52371aa970ed1d39f44b46763d55b63",
+		"remainAmount": "0",
+		"transactions": [],
+		"addressExplorerUrl": "https://etherscan.io/token/0xdAC17F958D2ee523a2206206994597C13D831ec7?a=0x1acb4fdaf52371aa970ed1d39f44b46763d55b63"
+	},
+	"orderId": "CPO-a1ac80659f0a47fdb83fbe9965bd21c7",
+	"cashFlow": {
+		"initialExchangeRate": "0.9979",
+		"insuranceExchangeRate": "0.99690235",
+		"processingCommissions": [
+			{
+				"feeAmount": "7.425",
+				"commission": {
+					"kind": "COMMISSION_ORDER_PROCESSING",
+					"settleCurrency": "USD",
+					"commissionValue": {
+						"value": "0.015"
+					}
+				},
+				"commissionMerchant": "INTERNAL_GOLDENPAYDMCCROOT"
+			},
+			{
+				"feeAmount": "7.425",
+				"commission": {
+					"kind": "COMMISSION_ORDER_PROCESSING",
+					"settleCurrency": "USD",
+					"commissionValue": {
+						"value": "0.015"
+					}
+				},
+				"commissionMerchant": "GOLDENPAYDMCCROOT"
+			}
+		],
+		"rateInsuranceCommissions": [
+			{
+				"commission": {
+					"kind": "COMMISSION_ORDER_RATE_INSURANCE",
+					"settleCurrency": "USD",
+					"commissionValue": {
+						"value": "0.0005"
+					}
+				},
+				"commissionMerchant": "INTERNAL_GOLDENPAYDMCCROOT",
+				"upstreamExchangeRate": "0.9979",
+				"insuranceExchangeRate": "0.99740105"
+			},
+			{
+				"commission": {
+					"kind": "COMMISSION_ORDER_RATE_INSURANCE",
+					"settleCurrency": "USD",
+					"commissionValue": {
+						"value": "0.0005"
+					}
+				},
+				"commissionMerchant": "GOLDENPAYDMCCROOT",
+				"upstreamExchangeRate": "0.99740105",
+				"insuranceExchangeRate": "0.99690235"
+			}
+		],
+		"totalFeeAmountCurrencyTo": "14.85",
+		"totalFeeAmountCurrencyFrom": "0"
+	},
+	"createdAt": "2022-04-14T12:25:20.120Z",
+	"expiredAt": "2022-04-14T12:45:20.120Z",
+	"updatedAt": "2022-04-14T12:25:20.120Z",
+	"instrument": "CRYPTO_SELL",
+	"paidStatus": "NONE",
+	"clientOrderId": "45042010062341",
+	"clientOrderTag": "11016020"
+}
