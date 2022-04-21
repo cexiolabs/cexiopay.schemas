@@ -1,0 +1,124 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schemas.cexpay.io/v3/rate/rate.json",
+	"title": "Instrument rates response data transfer object",
+	"type": "object",
+	"definitions": {
+		"currencyTransport": {
+			"properties": {
+				"currency": {
+					"$ref": "https://schemas.cexpay.io/api/v3/currency.json#/definitions/currency",
+					"title": "Currency code (like 'BTC', 'USD', etc)."
+				},
+				"transport": {
+					"type": "string"
+				}
+			},
+			"required": [
+				"currency",
+				"transport"
+			],
+			"additionalProperties": false
+		},
+		"symbol": {
+			"type": "string",
+			"title": "Exchange symbol in Base/Quote notation.",
+			"description": "See for sample https://schemas.cexpay.io/api/v3/order/rate.symbol-sample.png"
+		},
+		"maintenance": {
+			"type": "object",
+			"properties": {
+				"scheduledUptimeAt": {
+					"oneOf": [
+						{
+							"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#/definitions/date",
+							"title": "Maintenance end date"
+						},
+						{
+							"type": "null"
+						}
+					]
+				},
+				"code": {
+					"type": "integer",
+					"title": "Maintenance reason code"
+				}
+			},
+			"required": [
+				"scheduledUptimeAt",
+				"code"
+			]
+		},
+		"successItem": {
+			"type": "object",
+			"properties": {
+				"from": {
+					"$ref": "#/definitions/currencyTransport"
+				},
+				"to": {
+					"$ref": "#/definitions/currencyTransport"
+				},
+				"symbol": {
+					"$ref": "#/definitions/symbol"
+				},
+				"rate": {
+					"$ref": "https://schemas.cexpay.io/api/v3/primitives.json#/definitions/financialPositive"
+				}
+			},
+			"required": [
+				"from",
+				"to",
+				"symbol",
+				"rate"
+			],
+			"additionalProperties": false
+		},
+		"errorItem": {
+			"type": "object",
+			"properties": {
+				"from": {
+					"$ref": "#/definitions/currencyTransport"
+				},
+				"to": {
+					"$ref": "#/definitions/currencyTransport"
+				},
+				"symbol": {
+					"$ref": "#/definitions/symbol"
+				},
+				"maintenance": {
+					"$ref": "#/definitions/maintenance"
+				}
+			},
+			"required": [
+				"from",
+				"to",
+				"symbol",
+				"maintenance"
+			],
+			"additionalProperties": false
+		}
+	},
+	"properties": {
+		"instrument": {
+			"type": "string",
+			"title": "Merchant instrument name, like 'DEFAULT'"
+		},
+		"rates": {
+			"type": "array",
+			"items": {
+				"oneOf": [
+					{
+						"$ref": "#/definitions/successItem"
+					},
+					{
+						"$ref": "#/definitions/errorItem"
+					}
+				]
+			}
+		}
+	},
+	"required": [
+		"instrument",
+		"rates"
+	]
+}

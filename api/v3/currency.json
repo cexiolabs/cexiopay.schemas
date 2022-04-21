@@ -9,18 +9,22 @@
 				"ADA",
 				"ATOM",
 				"BAT",
+				"BCH",
+				"BNB",
 				"BTC",
 				"BTT",
 				"DASH",
 				"ETH",
 				"GAS",
 				"LTC",
+				"MATIC",
 				"MHC",
 				"NEO",
 				"ONG",
 				"ONT",
 				"TRX",
 				"TST",
+				"USDC",
 				"USDT",
 				"XRP",
 				"XTZ"
@@ -38,10 +42,10 @@
 		"currency": {
 			"oneOf": [
 				{
-					"$ref": "#definitions/currencyCrypto"
+					"$ref": "#/definitions/currencyCrypto"
 				},
 				{
-					"$ref": "#definitions/currencyFiat"
+					"$ref": "#/definitions/currencyFiat"
 				}
 			]
 		}
